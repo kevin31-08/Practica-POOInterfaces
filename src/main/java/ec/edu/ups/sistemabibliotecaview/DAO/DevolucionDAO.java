@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author katherine
  */
-public class DevolcuionDAO implements SistemaDAO<Devolucion>{
+public class DevolucionDAO implements SistemaDAO<Devolucion>{
     private ArrayList<Devolucion> devoluciones;
     @Override
     public Devolucion agregar(Devolucion datos) {

@@ -4,6 +4,8 @@
  */
 package ec.edu.ups.sistemabibliotecaview.baseDeDatos;
 
+import java.util.Date;
+
 /**
  *
  * @author katherine

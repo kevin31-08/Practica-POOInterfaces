@@ -48,19 +48,13 @@ public class UsuarioDAO implements SistemaDAO<Usuario> {
 
     @Override
     public Usuario actualizar(Usuario datos) {
-        for (Usuario u : usuarios) {
-            if (u.getCedula().equals(datos.getCedula())) {
+        Usuario u = buscar(datos.getCedula());
 
-                u.setNombre(datos.getNombre());
-                u.setApellido(datos.getApellido());
-                u.setTelefono(datos.getTelefono());
-                u.setFechaNacimiento(datos.getFechaNacimiento());
+        u.setNombre(datos.getNombre());
+        u.setApellido(datos.getApellido());
+        u.setTelefono(datos.getTelefono());
+        u.setFechaNacimiento(datos.getFechaNacimiento());
 
-                return u;
-            }
-        }
-        return null;
+        return u;
     }
 }
-
-
