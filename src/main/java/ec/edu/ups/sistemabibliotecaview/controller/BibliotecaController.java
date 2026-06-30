@@ -4,18 +4,18 @@
  */
 package ec.edu.ups.sistemabibliotecaview.controller;
 
-import ec.edu.ups.sistemabibliotecaview.DAO.AutorDAO;
-import ec.edu.ups.sistemabibliotecaview.DAO.BibliotecarioDAO;
-import ec.edu.ups.sistemabibliotecaview.DAO.DevolucionDAO;
-import ec.edu.ups.sistemabibliotecaview.DAO.LibroDAO;
-import ec.edu.ups.sistemabibliotecaview.DAO.PrestamoDAO;
-import ec.edu.ups.sistemabibliotecaview.DAO.UsuarioDAO;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Autor;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Bibliotecario;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Devolucion;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Libro;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Prestamo;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
+import ec.edu.ups.sistemabibliotecaview.service.AutorService;
+import ec.edu.ups.sistemabibliotecaview.service.BibliotecarioService;
+import ec.edu.ups.sistemabibliotecaview.service.DevolucionService;
+import ec.edu.ups.sistemabibliotecaview.service.LibroService;
+import ec.edu.ups.sistemabibliotecaview.service.PrestamoService;
+import ec.edu.ups.sistemabibliotecaview.service.UsuarioService;
 
 /**
  *
@@ -23,115 +23,111 @@ import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
  */
 public class BibliotecaController {
 
-    private UsuarioDAO usuarioDAO;
-    private LibroDAO libroDAO;
-    private PrestamoDAO prestamoDAO;
-    private AutorDAO autorDAO;
-    private BibliotecarioDAO bibliotecarioDAO;
-    private DevolucionDAO devolucionDAO;
+    private UsuarioService usuarioService;
+    private LibroService libroService;
+    private PrestamoService prestamoService;
+    private AutorService autorService;
+    private BibliotecarioService bibliotecarioService;
+    private DevolucionService devolucionService;
 
-    public BibliotecaController(UsuarioDAO usuarioDAO, LibroDAO libroDAO, PrestamoDAO prestamoDAO, AutorDAO autor, BibliotecarioDAO bibliotecario, DevolucionDAO devolucion) {
-        this.usuarioDAO = usuarioDAO;
-        this.libroDAO = libroDAO;
-        this.prestamoDAO = prestamoDAO;
-        this.autorDAO = autor;
-        this.bibliotecarioDAO = bibliotecario;
-        this.devolucionDAO = devolucion;
-    }
-
-    public Usuario agregarUsuario(Usuario usuario) {
-        return usuarioDAO.agregar(usuario);
+    public BibliotecaController() {
+        usuarioService = new UsuarioService();
+        libroService = new LibroService();
+        prestamoService = new PrestamoService();
+        autorService = new AutorService();
+        bibliotecarioService = new BibliotecarioService();
+        devolucionService = new DevolucionService();
     }
 
     public Usuario buscarUsuario(String cedula) {
-        return usuarioDAO.buscar(cedula);
+        return usuarioService.buscarUsuario(cedula);
     }
 
     public Usuario actualizarUsuario(Usuario usuario) {
-        return usuarioDAO.actualizar(usuario);
+        return usuarioService.actualizarUsuario(usuario);
     }
 
     public void eliminarUsuario(String cedula) {
-        usuarioDAO.eliminar(cedula);
+        usuarioService.eliminarUsuario(cedula);
     }
 
     public Autor agregarAutor(Autor autor) {
-        return autorDAO.agregar(autor);
+        return autorService.agregarAutor(autor);
     }
 
     public Autor buscarAutor(String id) {
-        return autorDAO.buscar(id);
+        return autorService.buscarAutor(id);
     }
 
     public Autor actualizarAutor(Autor autor) {
-        return autorDAO.actualizar(autor);
+        return autorService.actualizarAutor(autor);
     }
 
     public void eliminarAutor(String id) {
-        autorDAO.eliminar(id);
+        autorService.eliminarAutor(id);
     }
 
     public Libro agregarLibro(Libro libro) {
-        return libroDAO.agregar(libro);
+        return libroService.agregarLibro(libro);
     }
 
-    public Libro buscarLibro(String codigo) {
-        return libroDAO.buscar(codigo);
+    public Libro buscarLibro(String isbn) {
+        return libroService.buscarLibro(isbn);
     }
 
     public Libro actualizarLibro(Libro libro) {
-        return libroDAO.actualizar(libro);
+        return libroService.actualizarLibro(libro);
     }
 
-    public void eliminarLibro(String codigo) {
-        libroDAO.eliminar(codigo);
+    public void eliminarLibro(String isbn) {
+        libroService.eliminarLibro(isbn);
     }
 
-    public Bibliotecario agregarBibliotecario(Bibliotecario bibliotecario) {
-        return bibliotecarioDAO.agregar(bibliotecario);
+    public Bibliotecario agregarBibliotecario(Bibliotecario b) {
+        return bibliotecarioService.agregarBibliotecario(b);
     }
 
     public Bibliotecario buscarBibliotecario(String cedula) {
-        return bibliotecarioDAO.buscar(cedula);
+        return bibliotecarioService.buscarBibliotecario(cedula);
     }
 
-    public Bibliotecario actualizarBibliotecario(Bibliotecario bibliotecario) {
-        return bibliotecarioDAO.actualizar(bibliotecario);
+    public Bibliotecario actualizarBibliotecario(Bibliotecario b) {
+        return bibliotecarioService.actualizarBibliotecario(b);
     }
 
     public void eliminarBibliotecario(String cedula) {
-        bibliotecarioDAO.eliminar(cedula);
+        bibliotecarioService.eliminarBibliotecario(cedula);
     }
 
-    public Prestamo agregarPrestamo(Prestamo prestamo) {
-        return prestamoDAO.agregar(prestamo);
+    public Prestamo agregarPrestamo(Prestamo p) {
+        return prestamoService.agregarPrestamo(p);
     }
 
     public Prestamo buscarPrestamo(String codigo) {
-        return prestamoDAO.buscar(codigo);
+        return prestamoService.buscarPrestamo(codigo);
     }
 
-    public Prestamo actualizarPrestamo(Prestamo prestamo) {
-        return prestamoDAO.actualizar(prestamo);
+    public Prestamo actualizarPrestamo(Prestamo p) {
+        return prestamoService.actualizarPrestamo(p);
     }
 
     public void eliminarPrestamo(String codigo) {
-        prestamoDAO.eliminar(codigo);
+        prestamoService.eliminarPrestamo(codigo);
     }
 
-    public Devolucion agregarDevolucion(Devolucion devolucion) {
-        return devolucionDAO.agregar(devolucion);
+    public Devolucion agregarDevolucion(Devolucion d) {
+        return devolucionService.agregarDevolucion(d);
     }
 
     public Devolucion buscarDevolucion(String codigo) {
-        return devolucionDAO.buscar(codigo);
+        return devolucionService.buscarDevolucion(codigo);
     }
 
-    public Devolucion actualizarDevolucion(Devolucion devolucion) {
-        return devolucionDAO.actualizar(devolucion);
+    public Devolucion actualizarDevolucion(Devolucion d) {
+        return devolucionService.actualizarDevolucion(d);
     }
 
     public void eliminarDevolucion(String codigo) {
-        devolucionDAO.eliminar(codigo);
+        devolucionService.eliminarDevolucion(codigo);
     }
 }
