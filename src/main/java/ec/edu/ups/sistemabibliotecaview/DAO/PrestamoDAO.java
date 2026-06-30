@@ -6,6 +6,7 @@ package ec.edu.ups.sistemabibliotecaview.DAO;
 
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Prestamo;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -62,6 +63,11 @@ public class PrestamoDAO implements SistemaDAO<Prestamo>{
         }
         return null;
     }
+
+    @Override
+    public List<Prestamo> listar() {
+        return prestamos;
+   }
 }
     
     

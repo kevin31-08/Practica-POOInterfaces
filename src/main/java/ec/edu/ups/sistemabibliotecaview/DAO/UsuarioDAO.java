@@ -6,6 +6,7 @@ package ec.edu.ups.sistemabibliotecaview.DAO;
 
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -57,4 +58,10 @@ public class UsuarioDAO implements SistemaDAO<Usuario> {
 
         return u;
     }
+
+    @Override
+    public List<Usuario> listar() {
+        return usuarios;
+        
+   }
 }

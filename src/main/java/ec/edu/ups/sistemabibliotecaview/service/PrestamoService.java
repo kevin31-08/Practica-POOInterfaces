@@ -8,6 +8,8 @@ import ec.edu.ups.sistemabibliotecaview.DAO.PrestamoDAO;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Libro;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Prestamo;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -84,5 +86,19 @@ public class PrestamoService {
         }
 
         prestamoDAO.eliminar(codigo);
+    }
+        public List<Prestamo> listarPrestamo() {
+
+        if (prestamoDAO == null) {
+            return null;
+        }
+
+        List<Prestamo> lista = prestamoDAO.listar();
+
+        if (lista == null) {
+            return new ArrayList<>();
+        }
+
+        return lista;
     }
 }

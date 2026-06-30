@@ -6,6 +6,9 @@ package ec.edu.ups.sistemabibliotecaview.service;
 
 import ec.edu.ups.sistemabibliotecaview.DAO.BibliotecarioDAO;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Bibliotecario;
+import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -28,9 +31,8 @@ public class BibliotecarioService {
             return null;
         }
 
-        
         if (bibliotecarioDAO.buscar(bibliotecario.getCedula()) != null) {
-            return null; 
+            return null;
         }
 
         return bibliotecarioDAO.agregar(bibliotecario);
@@ -52,9 +54,8 @@ public class BibliotecarioService {
             return null;
         }
 
-        
         if (bibliotecarioDAO.buscar(bibliotecario.getCedula()) == null) {
-            return null; 
+            return null;
         }
         return bibliotecarioDAO.actualizar(bibliotecario);
     }
@@ -66,4 +67,18 @@ public class BibliotecarioService {
         bibliotecarioDAO.eliminar(cedula);
     }
 
+    public List<Bibliotecario> listarBibliotecarios() {
+
+        if (bibliotecarioDAO == null) {
+            return null;
+        }
+
+        List<Bibliotecario> lista = bibliotecarioDAO.listar();
+
+        if (lista == null) {
+            return new ArrayList<>();
+        }
+
+        return lista;
+    }
 }

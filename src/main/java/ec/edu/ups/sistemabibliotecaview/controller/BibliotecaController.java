@@ -16,6 +16,7 @@ import ec.edu.ups.sistemabibliotecaview.service.DevolucionService;
 import ec.edu.ups.sistemabibliotecaview.service.LibroService;
 import ec.edu.ups.sistemabibliotecaview.service.PrestamoService;
 import ec.edu.ups.sistemabibliotecaview.service.UsuarioService;
+import java.util.List;
 
 /**
  *
@@ -51,6 +52,10 @@ public class BibliotecaController {
         usuarioService.eliminarUsuario(cedula);
     }
 
+    public List<Usuario> listarUsuarios() {
+        return usuarioService.listarUsuarios();
+    }
+
     public Autor agregarAutor(Autor autor) {
         return autorService.agregarAutor(autor);
     }
@@ -65,6 +70,10 @@ public class BibliotecaController {
 
     public void eliminarAutor(String id) {
         autorService.eliminarAutor(id);
+    }
+
+    public List<Autor> listarAutor() {
+        return autorService.listarAutors();
     }
 
     public Libro agregarLibro(Libro libro) {
@@ -83,6 +92,10 @@ public class BibliotecaController {
         libroService.eliminarLibro(isbn);
     }
 
+    public List<Libro> listarLibros() {
+        return libroService.listarLibro();
+    }
+
     public Bibliotecario agregarBibliotecario(Bibliotecario b) {
         return bibliotecarioService.agregarBibliotecario(b);
     }
@@ -97,6 +110,11 @@ public class BibliotecaController {
 
     public void eliminarBibliotecario(String cedula) {
         bibliotecarioService.eliminarBibliotecario(cedula);
+
+    }
+
+    public List<Bibliotecario> listarBibliotecarios() {
+        return bibliotecarioService.listarBibliotecarios();
     }
 
     public Prestamo agregarPrestamo(Prestamo p) {
@@ -115,6 +133,10 @@ public class BibliotecaController {
         prestamoService.eliminarPrestamo(codigo);
     }
 
+    public List<Prestamo> listarPrestamo() {
+        return prestamoService.listarPrestamo();
+    }
+
     public Devolucion agregarDevolucion(Devolucion d) {
         return devolucionService.agregarDevolucion(d);
     }
@@ -129,5 +151,9 @@ public class BibliotecaController {
 
     public void eliminarDevolucion(String codigo) {
         devolucionService.eliminarDevolucion(codigo);
+    }
+
+    public List<Devolucion> listarDevolucions() {
+        return devolucionService.listarDevolucions();
     }
 }

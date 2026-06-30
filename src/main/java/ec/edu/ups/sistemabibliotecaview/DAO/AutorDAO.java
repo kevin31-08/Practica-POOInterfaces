@@ -6,6 +6,7 @@ package ec.edu.ups.sistemabibliotecaview.DAO;
 
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Autor;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -62,6 +63,11 @@ public class AutorDAO implements SistemaDAO<Autor> {
             }
         }
         return null;
+    }
+
+    @Override
+    public List<Autor> listar() {
+        return autores;
     }
 
 }

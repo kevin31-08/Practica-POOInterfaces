@@ -7,6 +7,8 @@ package ec.edu.ups.sistemabibliotecaview.service;
 import ec.edu.ups.sistemabibliotecaview.DAO.UsuarioDAO;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Autor;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -67,6 +69,21 @@ public class UsuarioService {
             return;
         }
         usuarioDAO.eliminar(cedula);
+    }
+
+    public List<Usuario> listarUsuarios() {
+
+        if (usuarioDAO == null) {
+            return null;
+        }
+
+        List<Usuario> lista = usuarioDAO.listar();
+
+        if (lista == null) {
+            return new ArrayList<>();
+        }
+
+        return lista;
     }
 
 }

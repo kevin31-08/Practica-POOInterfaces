@@ -4,6 +4,8 @@
  */
 package ec.edu.ups.sistemabibliotecaview.DAO;
 
+import java.util.List;
+
 /**
  *
  * @author katherine
@@ -11,7 +13,7 @@ package ec.edu.ups.sistemabibliotecaview.DAO;
 public interface SistemaDAO<T> {
     T agregar(T datos);
     void eliminar(String cedula);
-    T buscar(String cedula);
+    T buscar(String id);
     T actualizar(T datos);
-    
+    List<T> listar();
 }

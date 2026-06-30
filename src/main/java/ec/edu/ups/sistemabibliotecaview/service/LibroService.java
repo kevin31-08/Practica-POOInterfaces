@@ -6,6 +6,9 @@ package ec.edu.ups.sistemabibliotecaview.service;
 
 import ec.edu.ups.sistemabibliotecaview.DAO.LibroDAO;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Libro;
+import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -67,6 +70,21 @@ public class LibroService {
             return;
         }
         libroDAO.eliminar(ISBN);
+    }
+
+    public List<Libro> listarLibro() {
+
+        if (libroDAO == null) {
+            return null;
+        }
+
+        List<Libro> lista = libroDAO.listar();
+
+        if (lista == null) {
+            return new ArrayList<>();
+        }
+
+        return lista;
     }
 
 }

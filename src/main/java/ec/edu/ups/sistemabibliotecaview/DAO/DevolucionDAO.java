@@ -6,6 +6,7 @@ package ec.edu.ups.sistemabibliotecaview.DAO;
 
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Devolucion;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -49,6 +50,11 @@ public class DevolucionDAO implements SistemaDAO<Devolucion>{
             }
         }
         return null;
+    }
+
+    @Override
+    public List<Devolucion> listar() {
+        return devoluciones;
     }
 }
     

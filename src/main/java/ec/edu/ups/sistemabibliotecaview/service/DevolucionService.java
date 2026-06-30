@@ -7,6 +7,8 @@ package ec.edu.ups.sistemabibliotecaview.service;
 import ec.edu.ups.sistemabibliotecaview.DAO.DevolucionDAO;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Devolucion;
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -64,4 +66,18 @@ public class DevolucionService {
         devolucionDAO.eliminar(isbn);
     }
 
+    public List<Devolucion> listarDevolucions() {
+
+        if (devolucionDAO == null) {
+            return null;
+        }
+
+        List<Devolucion> lista = devolucionDAO.listar();
+
+        if (lista == null) {
+            return new ArrayList<>();
+        }
+
+        return lista;
+    }
 }

@@ -6,6 +6,7 @@ package ec.edu.ups.sistemabibliotecaview.DAO;
 
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Bibliotecario;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -55,6 +56,11 @@ public class BibliotecarioDAO implements SistemaDAO<Bibliotecario> {
             }
         }
         return null;
+    }
+
+    @Override
+    public List<Bibliotecario> listar() {
+        return bibliotecarios;
     }
 
 }

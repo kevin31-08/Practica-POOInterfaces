@@ -6,6 +6,7 @@ package ec.edu.ups.sistemabibliotecaview.DAO;
 
 import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Libro;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -61,6 +62,11 @@ public class LibroDAO implements SistemaDAO<Libro> {
                 break;
             }
         }
+    }
+
+    @Override
+    public List<Libro> listar() {
+        return libros;
     }
 
 }
