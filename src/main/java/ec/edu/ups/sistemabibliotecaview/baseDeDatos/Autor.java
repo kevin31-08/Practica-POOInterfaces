@@ -21,7 +21,7 @@ public class Autor extends Persona {
 
     }
 
-    public Autor(String nacionalidad, String generoLiterario, String bibliografia, ArrayList<Autor> autores, String cedula, String nombre, String apellido, String telefono, Date fechaNacimiento) {
+    public Autor(String nacionalidad, String generoLiterario, String bibliografia, String cedula, String nombre, String apellido, String telefono, Date fechaNacimiento) {
         super(cedula, nombre, apellido, telefono, fechaNacimiento);
         this.nacionalidad = nacionalidad;
         this.generoLiterario = generoLiterario;
