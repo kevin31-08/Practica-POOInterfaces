@@ -81,4 +81,8 @@ public class BibliotecarioService {
 
         return lista;
     }
+
+    public int contarBibliotecarios() {
+        return bibliotecarioDAO.contar();
+    }
 }

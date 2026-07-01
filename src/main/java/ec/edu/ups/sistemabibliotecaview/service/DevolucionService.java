@@ -80,4 +80,7 @@ public class DevolucionService {
 
         return lista;
     }
+    public int contarDevoluciones(){
+        return devolucionDAO.contar();
+    }
 }

@@ -86,5 +86,7 @@ public class AutorService {
 
         return lista;
     }
-
+    public int contarAutores() {
+    return autorDAO.contar();
+}
 }

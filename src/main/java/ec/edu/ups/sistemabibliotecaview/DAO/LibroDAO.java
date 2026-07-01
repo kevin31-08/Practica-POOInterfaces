@@ -69,4 +69,9 @@ public class LibroDAO implements SistemaDAO<Libro> {
         return libros;
     }
 
+    @Override
+    public int contar() {
+        return libros.size();
+   }
+
 }

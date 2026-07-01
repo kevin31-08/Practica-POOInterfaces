@@ -70,4 +70,9 @@ public class AutorDAO implements SistemaDAO<Autor> {
         return autores;
     }
 
+    @Override
+    public int contar() {
+        return autores.size();
+    }
+
 }

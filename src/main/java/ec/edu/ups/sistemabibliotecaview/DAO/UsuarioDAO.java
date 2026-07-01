@@ -64,4 +64,9 @@ public class UsuarioDAO implements SistemaDAO<Usuario> {
         return usuarios;
         
    }
+
+    @Override
+    public int contar() {
+        return usuarios.size();
+    }
 }

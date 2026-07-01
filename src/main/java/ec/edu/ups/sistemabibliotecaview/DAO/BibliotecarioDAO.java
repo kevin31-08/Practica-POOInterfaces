@@ -63,4 +63,9 @@ public class BibliotecarioDAO implements SistemaDAO<Bibliotecario> {
         return bibliotecarios;
     }
 
+    @Override
+    public int contar() {
+        return bibliotecarios.size();
+    }
+
 }

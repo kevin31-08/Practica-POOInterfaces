@@ -87,7 +87,8 @@ public class PrestamoService {
 
         prestamoDAO.eliminar(codigo);
     }
-        public List<Prestamo> listarPrestamo() {
+
+    public List<Prestamo> listarPrestamo() {
 
         if (prestamoDAO == null) {
             return null;
@@ -100,5 +101,9 @@ public class PrestamoService {
         }
 
         return lista;
+    }
+
+    public int contarPrestamos() {
+        return prestamoDAO.contar();
     }
 }

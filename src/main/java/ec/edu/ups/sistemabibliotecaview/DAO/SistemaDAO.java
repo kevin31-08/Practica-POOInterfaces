@@ -16,4 +16,5 @@ public interface SistemaDAO<T> {
     T buscar(String id);
     T actualizar(T datos);
     List<T> listar();
+    int contar();
 }

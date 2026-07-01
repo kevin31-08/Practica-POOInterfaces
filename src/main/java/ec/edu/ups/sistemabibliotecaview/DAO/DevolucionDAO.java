@@ -56,6 +56,11 @@ public class DevolucionDAO implements SistemaDAO<Devolucion>{
     public List<Devolucion> listar() {
         return devoluciones;
     }
+
+    @Override
+    public int contar() {
+        return devoluciones.size();
+    }
 }
     
 

@@ -86,4 +86,8 @@ public class UsuarioService {
         return lista;
     }
 
+    public int contarUsuarios() {
+        return usuarioDAO.contar();
+    }
+
 }

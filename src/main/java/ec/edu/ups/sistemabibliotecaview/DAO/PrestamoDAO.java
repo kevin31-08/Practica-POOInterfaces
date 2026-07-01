@@ -68,6 +68,11 @@ public class PrestamoDAO implements SistemaDAO<Prestamo>{
     public List<Prestamo> listar() {
         return prestamos;
    }
+
+    @Override
+    public int contar() {
+        return prestamos.size();
+   }
 }
     
     

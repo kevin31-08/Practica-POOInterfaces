@@ -87,4 +87,7 @@ public class LibroService {
         return lista;
     }
 
+    public int contarLibros() {
+        return libroDAO.contar();
+    }
 }
