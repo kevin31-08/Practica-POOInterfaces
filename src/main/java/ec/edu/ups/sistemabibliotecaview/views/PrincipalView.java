@@ -33,9 +33,9 @@ public class PrincipalView extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jLabelInicioBienvenida = new javax.swing.JLabel();
+        jButtonIngresoInicio = new javax.swing.JButton();
+        jButtonSalirInicio = new javax.swing.JButton();
 
         lbntitulo.setFont(new java.awt.Font("Segoe UI Black", 1, 36)); // NOI18N
         lbntitulo.setForeground(new java.awt.Color(255, 255, 255));
@@ -66,22 +66,22 @@ public class PrincipalView extends javax.swing.JFrame {
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.lightGray, java.awt.Color.lightGray, java.awt.Color.lightGray));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setText("BIENVENIDO AL SISTEMA BIBLIOTECA");
+        jLabelInicioBienvenida.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelInicioBienvenida.setText("BIENVENIDO AL SISTEMA BIBLIOTECA");
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
-        jButton1.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("--> INGRESAR");
-        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 102), new java.awt.Color(0, 0, 153), new java.awt.Color(51, 0, 102), new java.awt.Color(0, 0, 102)));
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        jButtonIngresoInicio.setBackground(new java.awt.Color(0, 0, 102));
+        jButtonIngresoInicio.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
+        jButtonIngresoInicio.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonIngresoInicio.setText("--> INGRESAR");
+        jButtonIngresoInicio.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 102), new java.awt.Color(0, 0, 153), new java.awt.Color(51, 0, 102), new java.awt.Color(0, 0, 102)));
+        jButtonIngresoInicio.addActionListener(this::jButtonIngresoInicioActionPerformed);
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
-        jButton2.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("<--    SALIR");
-        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 102), new java.awt.Color(0, 0, 153), new java.awt.Color(51, 0, 102), new java.awt.Color(0, 0, 102)));
-        jButton2.addActionListener(this::jButton2ActionPerformed);
+        jButtonSalirInicio.setBackground(new java.awt.Color(0, 0, 102));
+        jButtonSalirInicio.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
+        jButtonSalirInicio.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonSalirInicio.setText("<--    SALIR");
+        jButtonSalirInicio.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 102), new java.awt.Color(0, 0, 153), new java.awt.Color(51, 0, 102), new java.awt.Color(0, 0, 102)));
+        jButtonSalirInicio.addActionListener(this::jButtonSalirInicioActionPerformed);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -89,27 +89,27 @@ public class PrincipalView extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelInicioBienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(53, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonSalirInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonIngresoInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(114, 114, 114))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(59, 59, 59)
-                .addComponent(jLabel2)
+                .addComponent(jLabelInicioBienvenida)
                 .addGap(25, 25, 25)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonIngresoInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonSalirInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(69, Short.MAX_VALUE))
         );
 
@@ -137,14 +137,14 @@ public class PrincipalView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonIngresoInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresoInicioActionPerformed
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonIngresoInicioActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonSalirInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirInicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonSalirInicioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,10 +172,10 @@ public class PrincipalView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonIngresoInicio;
+    private javax.swing.JButton jButtonSalirInicio;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabelInicioBienvenida;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;

@@ -2,20 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/Application.java to edit this template
  */
-package ec.edu.ups.sistemabibliotecaview.menuview.devolucionview;
+package ec.edu.ups.sistemabibliotecaview.views;
 
 /**
  *
  * @author katherine
  */
-public class MenuDevolucionView extends javax.swing.JFrame {
+public class MenuView extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MenuDevolucionView.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MenuView.class.getName());
 
     /**
-     * Creates new form MenuDevolucionView
+     * Creates new form MenuUsuarioView
      */
-    public MenuDevolucionView() {
+    public MenuView() {
         initComponents();
     }
 
@@ -28,38 +28,137 @@ public class MenuDevolucionView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel83 = new javax.swing.JPanel();
+        jPanel84 = new javax.swing.JPanel();
+        btnInicio16 = new javax.swing.JButton();
+        btnAutores16 = new javax.swing.JButton();
+        btnBibliotecarios16 = new javax.swing.JButton();
+        btnPrestamo16 = new javax.swing.JButton();
+        btnDevoluciones16 = new javax.swing.JButton();
+        btnLibros16 = new javax.swing.JButton();
+        jPanel85 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelMBienvenida = new javax.swing.JLabel();
         jPanel61 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelInformacionP1 = new javax.swing.JLabel();
+        jLabelInformacionP2 = new javax.swing.JLabel();
+        jLabelInformacionP3 = new javax.swing.JLabel();
+        jLabelInformacionP4 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         menuBar = new javax.swing.JMenuBar();
-        fileMenu = new javax.swing.JMenu();
+        fileMenuFunciones = new javax.swing.JMenu();
         openMenuItem = new javax.swing.JMenuItem();
         saveMenuItem = new javax.swing.JMenuItem();
         saveAsMenuItem = new javax.swing.JMenuItem();
         exitMenuItem = new javax.swing.JMenuItem();
-        editMenu = new javax.swing.JMenu();
-        cutMenuItem = new javax.swing.JMenuItem();
-        copyMenuItem = new javax.swing.JMenuItem();
-        pasteMenuItem = new javax.swing.JMenuItem();
-        deleteMenuItem = new javax.swing.JMenuItem();
-        helpMenu = new javax.swing.JMenu();
-        contentsMenuItem = new javax.swing.JMenuItem();
-        aboutMenuItem = new javax.swing.JMenuItem();
+
+        jPanel83.setBackground(new java.awt.Color(0, 0, 102));
+
+        javax.swing.GroupLayout jPanel84Layout = new javax.swing.GroupLayout(jPanel84);
+        jPanel84.setLayout(jPanel84Layout);
+        jPanel84Layout.setHorizontalGroup(
+            jPanel84Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 74, Short.MAX_VALUE)
+        );
+        jPanel84Layout.setVerticalGroup(
+            jPanel84Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 66, Short.MAX_VALUE)
+        );
+
+        btnInicio16.setBackground(new java.awt.Color(153, 153, 153));
+        btnInicio16.setText("Inicio");
+
+        btnAutores16.setBackground(new java.awt.Color(153, 153, 153));
+        btnAutores16.setText("Autores");
+
+        btnBibliotecarios16.setBackground(new java.awt.Color(153, 153, 153));
+        btnBibliotecarios16.setText("Bibliotecarios");
+        btnBibliotecarios16.addActionListener(this::btnBibliotecarios16ActionPerformed);
+
+        btnPrestamo16.setBackground(new java.awt.Color(153, 153, 153));
+        btnPrestamo16.setText("Prestamos");
+        btnPrestamo16.addActionListener(this::btnPrestamo16ActionPerformed);
+
+        btnDevoluciones16.setBackground(new java.awt.Color(153, 153, 153));
+        btnDevoluciones16.setText("Devoluciones");
+        btnDevoluciones16.addActionListener(this::btnDevoluciones16ActionPerformed);
+
+        btnLibros16.setBackground(new java.awt.Color(153, 153, 153));
+        btnLibros16.setText("Libros");
+        btnLibros16.addActionListener(this::btnLibros16ActionPerformed);
+
+        javax.swing.GroupLayout jPanel85Layout = new javax.swing.GroupLayout(jPanel85);
+        jPanel85.setLayout(jPanel85Layout);
+        jPanel85Layout.setHorizontalGroup(
+            jPanel85Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 76, Short.MAX_VALUE)
+        );
+        jPanel85Layout.setVerticalGroup(
+            jPanel85Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 49, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel83Layout = new javax.swing.GroupLayout(jPanel83);
+        jPanel83.setLayout(jPanel83Layout);
+        jPanel83Layout.setHorizontalGroup(
+            jPanel83Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel83Layout.createSequentialGroup()
+                .addGroup(jPanel83Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel83Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jPanel84, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel83Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel83Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnBibliotecarios16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnAutores16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnInicio16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel83Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel83Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnDevoluciones16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnPrestamo16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel83Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnLibros16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jPanel83Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jPanel85, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel83Layout.setVerticalGroup(
+            jPanel83Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel83Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel84, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(btnInicio16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnAutores16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBibliotecarios16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnPrestamo16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnDevoluciones16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnLibros16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel85, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
-        jLabel2.setText("!BIENVENIDO A AUTORES¡");
+        jLabelMBienvenida.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabelMBienvenida.setText("!BIENVENIDO¡");
 
         jPanel61.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -82,7 +181,7 @@ public class MenuDevolucionView extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(jLabelMBienvenida)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -94,21 +193,21 @@ public class MenuDevolucionView extends javax.swing.JFrame {
                         .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addComponent(jLabel2)))
+                        .addComponent(jLabelMBienvenida)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setText("Organiza, administra ");
+        jLabelInformacionP1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelInformacionP1.setText("Organiza, administra ");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setText("y transforma el conocimiento.");
+        jLabelInformacionP2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelInformacionP2.setText("y transforma el conocimiento.");
 
-        jLabel5.setText("Cada libro que registras, es una puerta ");
+        jLabelInformacionP3.setText("Cada libro que registras, es una puerta ");
 
-        jLabel6.setText("que habres a un nuevo mundo.");
+        jLabelInformacionP4.setText("que habres a un nuevo mundo.");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -128,28 +227,28 @@ public class MenuDevolucionView extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
+                    .addComponent(jLabelInformacionP3, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelInformacionP1)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
+                        .addComponent(jLabelInformacionP4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel4))
+                    .addComponent(jLabelInformacionP2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(9, 9, 9)
-                .addComponent(jLabel3)
+                .addComponent(jLabelInformacionP1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelInformacionP2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel5)
+                .addComponent(jLabelInformacionP3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabelInformacionP4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
@@ -179,61 +278,27 @@ public class MenuDevolucionView extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        fileMenu.setMnemonic('f');
-        fileMenu.setText("Devoluciones");
+        fileMenuFunciones.setMnemonic('f');
+        fileMenuFunciones.setText("Funciones");
 
         openMenuItem.setMnemonic('o');
         openMenuItem.setText("Agregar");
-        fileMenu.add(openMenuItem);
+        fileMenuFunciones.add(openMenuItem);
 
         saveMenuItem.setMnemonic('s');
-        saveMenuItem.setText("Listar");
-        fileMenu.add(saveMenuItem);
+        saveMenuItem.setText("Buscar");
+        fileMenuFunciones.add(saveMenuItem);
 
         saveAsMenuItem.setMnemonic('a');
-        saveAsMenuItem.setText("Buscar");
-        fileMenu.add(saveAsMenuItem);
+        saveAsMenuItem.setText("Eliminar");
+        fileMenuFunciones.add(saveAsMenuItem);
 
         exitMenuItem.setMnemonic('x');
-        exitMenuItem.setText("Salir");
+        exitMenuItem.setText("Actualizar");
         exitMenuItem.addActionListener(this::exitMenuItemActionPerformed);
-        fileMenu.add(exitMenuItem);
+        fileMenuFunciones.add(exitMenuItem);
 
-        menuBar.add(fileMenu);
-
-        editMenu.setMnemonic('e');
-        editMenu.setText("Edit");
-
-        cutMenuItem.setMnemonic('t');
-        cutMenuItem.setText("Cut");
-        editMenu.add(cutMenuItem);
-
-        copyMenuItem.setMnemonic('y');
-        copyMenuItem.setText("Copy");
-        editMenu.add(copyMenuItem);
-
-        pasteMenuItem.setMnemonic('p');
-        pasteMenuItem.setText("Paste");
-        editMenu.add(pasteMenuItem);
-
-        deleteMenuItem.setMnemonic('d');
-        deleteMenuItem.setText("Delete");
-        editMenu.add(deleteMenuItem);
-
-        menuBar.add(editMenu);
-
-        helpMenu.setMnemonic('h');
-        helpMenu.setText("Help");
-
-        contentsMenuItem.setMnemonic('c');
-        contentsMenuItem.setText("Contents");
-        helpMenu.add(contentsMenuItem);
-
-        aboutMenuItem.setMnemonic('a');
-        aboutMenuItem.setText("About");
-        helpMenu.add(aboutMenuItem);
-
-        menuBar.add(helpMenu);
+        menuBar.add(fileMenuFunciones);
 
         setJMenuBar(menuBar);
 
@@ -269,7 +334,7 @@ public class MenuDevolucionView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
@@ -278,6 +343,22 @@ public class MenuDevolucionView extends javax.swing.JFrame {
     private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
         System.exit(0);
     }//GEN-LAST:event_exitMenuItemActionPerformed
+
+    private void btnBibliotecarios16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBibliotecarios16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBibliotecarios16ActionPerformed
+
+    private void btnPrestamo16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrestamo16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPrestamo16ActionPerformed
+
+    private void btnDevoluciones16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDevoluciones16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDevoluciones16ActionPerformed
+
+    private void btnLibros16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLibros16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLibros16ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -301,33 +382,34 @@ public class MenuDevolucionView extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new MenuDevolucionView().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new MenuView().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem aboutMenuItem;
-    private javax.swing.JMenuItem contentsMenuItem;
-    private javax.swing.JMenuItem copyMenuItem;
-    private javax.swing.JMenuItem cutMenuItem;
-    private javax.swing.JMenuItem deleteMenuItem;
-    private javax.swing.JMenu editMenu;
+    private javax.swing.JButton btnAutores16;
+    private javax.swing.JButton btnBibliotecarios16;
+    private javax.swing.JButton btnDevoluciones16;
+    private javax.swing.JButton btnInicio16;
+    private javax.swing.JButton btnLibros16;
+    private javax.swing.JButton btnPrestamo16;
     private javax.swing.JMenuItem exitMenuItem;
-    private javax.swing.JMenu fileMenu;
-    private javax.swing.JMenu helpMenu;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JMenu fileMenuFunciones;
+    private javax.swing.JLabel jLabelInformacionP1;
+    private javax.swing.JLabel jLabelInformacionP2;
+    private javax.swing.JLabel jLabelInformacionP3;
+    private javax.swing.JLabel jLabelInformacionP4;
+    private javax.swing.JLabel jLabelMBienvenida;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel61;
+    private javax.swing.JPanel jPanel83;
+    private javax.swing.JPanel jPanel84;
+    private javax.swing.JPanel jPanel85;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem openMenuItem;
-    private javax.swing.JMenuItem pasteMenuItem;
     private javax.swing.JMenuItem saveAsMenuItem;
     private javax.swing.JMenuItem saveMenuItem;
     // End of variables declaration//GEN-END:variables
