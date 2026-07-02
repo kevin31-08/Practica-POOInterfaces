@@ -157,6 +157,7 @@ public class VentanaUsuarioView extends javax.swing.JInternalFrame {
         );
 
         setBackground(new java.awt.Color(153, 204, 255));
+        setTitle("Ingresar Usuario");
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
