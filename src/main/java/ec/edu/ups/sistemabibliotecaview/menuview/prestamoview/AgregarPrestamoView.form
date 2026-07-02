@@ -17,6 +17,12 @@
       </Properties>
     </Component>
   </NonVisualComponents>
+  <Properties>
+    <Property name="iconifiable" type="boolean" value="true"/>
+    <Property name="maximizable" type="boolean" value="true"/>
+    <Property name="resizable" type="boolean" value="true"/>
+    <Property name="title" type="java.lang.String" value="Agregar Prestamo"/>
+  </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
   </SyntheticProperties>
@@ -47,8 +53,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelUCedulaAgregarPrestamo" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelNombreAgregarPrestamo" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -56,17 +62,17 @@
                                   <Component id="txtUsuarioAgregarPrestamo" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="btnBuscarUsuarioPrestamo" min="-2" pref="86" max="-2" attributes="0"/>
+                              <Component id="btnBuscarUAgregarPrestamo" min="-2" pref="86" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabelISBNAgregarPrestamo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabelTituloAgregarPrestamo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -75,11 +81,11 @@
                                   <Component id="txtISBNAgregarPrestamo" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="btnBuscarLibro" min="-2" pref="86" max="-2" attributes="0"/>
+                              <Component id="btnBuscarLAgregarPrestamo" min="-2" pref="86" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelCodigoBibliotecarioAgregarPrestamo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="txtBibliotecarioAgregarPrestamo" min="-2" pref="159" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
@@ -94,17 +100,17 @@
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="txtFechaAgregarPrestamo" min="-2" pref="222" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelFechaPrestamoAgregarPrestamo" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="btnAgregarPrestamo" min="-2" pref="103" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="btbCancelarUsuario" min="-2" pref="101" max="-2" attributes="0"/>
+                                  <Component id="btbCancelarAgregarPrestamo" min="-2" pref="101" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelCodigoAgregarPrestamo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="txtCodigoAgregarPrestamo" min="-2" pref="222" max="-2" attributes="0"/>
                           </Group>
@@ -124,52 +130,52 @@
               <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCodigoAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtCodigoAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelUCedulaAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtUsuarioAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnBuscarUsuarioPrestamo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                  <Component id="btnBuscarUAgregarPrestamo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="txtNombreAgregarPrestamo" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelNombreAgregarPrestamo" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelISBNAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtISBNAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnBuscarLibro" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                  <Component id="btnBuscarLAgregarPrestamo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelTituloAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtTituloAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCodigoBibliotecarioAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtBibliotecarioAgregarPrestamo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabelFechaPrestamoAgregarPrestamo" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="txtFechaAgregarPrestamo" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnAgregarPrestamo" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                  <Component id="btbCancelarUsuario" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="btbCancelarAgregarPrestamo" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -179,7 +185,7 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="txtISBNAgregarPrestamo">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="jLabelISBNAgregarPrestamo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Libro(ISBN):"/>
       </Properties>
@@ -200,29 +206,29 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtUsuarioAgregarPrestamo">
     </Component>
-    <Component class="javax.swing.JButton" name="btbCancelarUsuario">
+    <Component class="javax.swing.JButton" name="btbCancelarAgregarPrestamo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbCancelarUsuarioActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbCancelarAgregarPrestamoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="jLabelUCedulaAgregarPrestamo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Usuario(Cedula):"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCodigoAgregarPrestamo">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="jLabelCodigoAgregarPrestamo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Codigo del Prestamo:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtFechaAgregarPrestamo">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="jLabelFechaPrestamoAgregarPrestamo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Fecha prestamo:"/>
       </Properties>
@@ -239,7 +245,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelAgregarPrestamo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -248,14 +254,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelAgregarPrestamo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="16" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="jLabelAgregarPrestamo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
@@ -267,28 +273,28 @@
     </Container>
     <Component class="javax.swing.JTextField" name="txtBibliotecarioAgregarPrestamo">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="jLabelCodigoBibliotecarioAgregarPrestamo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Bibliotecario(Codigo):"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtTituloAgregarPrestamo">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="jLabelTituloAgregarPrestamo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Titulo:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator1">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
+    <Component class="javax.swing.JLabel" name="jLabelNombreAgregarPrestamo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nombre:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtNombreAgregarPrestamo">
     </Component>
-    <Component class="javax.swing.JButton" name="btnBuscarUsuarioPrestamo">
+    <Component class="javax.swing.JButton" name="btnBuscarUAgregarPrestamo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="66" red="0" type="rgb"/>
@@ -299,12 +305,12 @@
         <Property name="text" type="java.lang.String" value="Buscar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarUsuarioPrestamoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarUAgregarPrestamoActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator2">
     </Component>
-    <Component class="javax.swing.JButton" name="btnBuscarLibro">
+    <Component class="javax.swing.JButton" name="btnBuscarLAgregarPrestamo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="66" red="0" type="rgb"/>
@@ -315,7 +321,7 @@
         <Property name="text" type="java.lang.String" value="Buscar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarLibroActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarLAgregarPrestamoActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator3">

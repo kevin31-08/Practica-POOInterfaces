@@ -4,19 +4,24 @@
  */
 package ec.edu.ups.sistemabibliotecaview.controller;
 
-import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Autor;
-import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Bibliotecario;
-import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Devolucion;
-import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Libro;
-import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Prestamo;
-import ec.edu.ups.sistemabibliotecaview.baseDeDatos.Usuario;
-import ec.edu.ups.sistemabibliotecaview.service.AutorService;
-import ec.edu.ups.sistemabibliotecaview.service.BibliotecarioService;
-import ec.edu.ups.sistemabibliotecaview.service.DevolucionService;
-import ec.edu.ups.sistemabibliotecaview.service.LibroService;
-import ec.edu.ups.sistemabibliotecaview.service.PrestamoService;
-import ec.edu.ups.sistemabibliotecaview.service.UsuarioService;
-import java.util.List;
+import ec.edu.ups.sistemabibliotecaview.DAO.SistemaDAO;
+import ec.edu.ups.sistemabibliotecaview.menuview.AutorView.ActualizarAutorView;
+import ec.edu.ups.sistemabibliotecaview.menuview.AutorView.AgregarAutorView;
+import ec.edu.ups.sistemabibliotecaview.menuview.AutorView.BuscarAutorView;
+import ec.edu.ups.sistemabibliotecaview.menuview.AutorView.EliminarAutorView;
+import ec.edu.ups.sistemabibliotecaview.menuview.BibliotecarioView.ActualizarBibliotecarioView;
+import ec.edu.ups.sistemabibliotecaview.menuview.BibliotecarioView.AgregarBibliotecarioView;
+import ec.edu.ups.sistemabibliotecaview.menuview.BibliotecarioView.BuscarBibliotecarioView;
+import ec.edu.ups.sistemabibliotecaview.menuview.BibliotecarioView.EliminarBibliotecarioView;
+import ec.edu.ups.sistemabibliotecaview.menuview.prestamoview.AgregarPrestamoView;
+import ec.edu.ups.sistemabibliotecaview.menuview.prestamoview.BuscarPrestamoView;
+import ec.edu.ups.sistemabibliotecaview.menuview.prestamoview.ListarPrestamoView;
+import ec.edu.ups.sistemabibliotecaview.menuview.usuarioview.ActualizarUsuarioView;
+import ec.edu.ups.sistemabibliotecaview.menuview.usuarioview.BuscarUsuarioView;
+import ec.edu.ups.sistemabibliotecaview.menuview.usuarioview.EliminarUsuarioView;
+import ec.edu.ups.sistemabibliotecaview.menuview.usuarioview.ListaUsuariosView;
+import ec.edu.ups.sistemabibliotecaview.menuview.usuarioview.VentanaUsuarioView;
+
 
 /**
  *
@@ -24,136 +29,35 @@ import java.util.List;
  */
 public class BibliotecaController {
 
-    private UsuarioService usuarioService;
-    private LibroService libroService;
-    private PrestamoService prestamoService;
-    private AutorService autorService;
-    private BibliotecarioService bibliotecarioService;
-    private DevolucionService devolucionService;
-
+    //Dao
+    private SistemaDAO sistemaDAO; 
+    //Autores
+    private AgregarAutorView agregarAutorView;
+    private EliminarAutorView eliminarAutorView;
+    private BuscarAutorView buscarAutorView;
+    private ActualizarAutorView actualizarAutorView;
+    //Bibliotecario
+    private AgregarBibliotecarioView agregarBibliotecarioView;
+    private EliminarBibliotecarioView eliminarBibliotecarioView;
+    private BuscarBibliotecarioView buscarBibliotecarioView;
+    private ActualizarBibliotecarioView actualizarBibliotecarioView;
+    //Prestamo
+    private BuscarPrestamoView buscarPrestamoView;
+    private AgregarPrestamoView agregarPrestamoView;
+    private ListarPrestamoView listarPrestamoView;
+    //Devolucion
+    private AgregarDevolucionView agregarDevolucionView;
+    //Usuario
+    private VentanaUsuarioView agregarUsuarioView;
+    private EliminarUsuarioView eliminarUsuarioView;
+    private BuscarUsuarioView buscarUsuarioView;
+    private ActualizarUsuarioView actualizarUsuarioView;
+    private ListaUsuariosView listaUsuariosView;
+    //Menu
+    
+    
     public BibliotecaController() {
-        usuarioService = new UsuarioService();
-        libroService = new LibroService();
-        prestamoService = new PrestamoService();
-        autorService = new AutorService();
-        bibliotecarioService = new BibliotecarioService();
-        devolucionService = new DevolucionService();
+        
     }
 
-    public Usuario buscarUsuario(String cedula) {
-        return usuarioService.buscarUsuario(cedula);
-    }
-
-    public Usuario actualizarUsuario(Usuario usuario) {
-        return usuarioService.actualizarUsuario(usuario);
-    }
-
-    public void eliminarUsuario(String cedula) {
-        usuarioService.eliminarUsuario(cedula);
-    }
-
-    public List<Usuario> listarUsuarios() {
-        return usuarioService.listarUsuarios();
-    }
-
-    public Autor agregarAutor(Autor autor) {
-        return autorService.agregarAutor(autor);
-    }
-
-    public Autor buscarAutor(String id) {
-        return autorService.buscarAutor(id);
-    }
-
-    public Autor actualizarAutor(Autor autor) {
-        return autorService.actualizarAutor(autor);
-    }
-
-    public void eliminarAutor(String id) {
-        autorService.eliminarAutor(id);
-    }
-
-    public List<Autor> listarAutor() {
-        return autorService.listarAutors();
-    }
-
-    public Libro agregarLibro(Libro libro) {
-        return libroService.agregarLibro(libro);
-    }
-
-    public Libro buscarLibro(String isbn) {
-        return libroService.buscarLibro(isbn);
-    }
-
-    public Libro actualizarLibro(Libro libro) {
-        return libroService.actualizarLibro(libro);
-    }
-
-    public void eliminarLibro(String isbn) {
-        libroService.eliminarLibro(isbn);
-    }
-
-    public List<Libro> listarLibros() {
-        return libroService.listarLibro();
-    }
-
-    public Bibliotecario agregarBibliotecario(Bibliotecario b) {
-        return bibliotecarioService.agregarBibliotecario(b);
-    }
-
-    public Bibliotecario buscarBibliotecario(String cedula) {
-        return bibliotecarioService.buscarBibliotecario(cedula);
-    }
-
-    public Bibliotecario actualizarBibliotecario(Bibliotecario b) {
-        return bibliotecarioService.actualizarBibliotecario(b);
-    }
-
-    public void eliminarBibliotecario(String cedula) {
-        bibliotecarioService.eliminarBibliotecario(cedula);
-
-    }
-
-    public List<Bibliotecario> listarBibliotecarios() {
-        return bibliotecarioService.listarBibliotecarios();
-    }
-
-    public Prestamo agregarPrestamo(Prestamo p) {
-        return prestamoService.agregarPrestamo(p);
-    }
-
-    public Prestamo buscarPrestamo(String codigo) {
-        return prestamoService.buscarPrestamo(codigo);
-    }
-
-    public Prestamo actualizarPrestamo(Prestamo p) {
-        return prestamoService.actualizarPrestamo(p);
-    }
-
-    public void eliminarPrestamo(String codigo) {
-        prestamoService.eliminarPrestamo(codigo);
-    }
-
-    public List<Prestamo> listarPrestamo() {
-        return prestamoService.listarPrestamo();
-    }
-
-    public Devolucion agregarDevolucion(Devolucion d) {
-        return devolucionService.agregarDevolucion(d);
-    }
-
-    public Devolucion buscarDevolucion(String codigo) {
-        return devolucionService.buscarDevolucion(codigo);
-    }
-
-    public Devolucion actualizarDevolucion(Devolucion d) {
-        return devolucionService.actualizarDevolucion(d);
-    }
-
-    public void eliminarDevolucion(String codigo) {
-        devolucionService.eliminarDevolucion(codigo);
-    }
-
-    public List<Devolucion> listarDevolucions() {
-        return devolucionService.listarDevolucions();
-    }
 }

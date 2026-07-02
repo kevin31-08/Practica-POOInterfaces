@@ -12,19 +12,18 @@ import java.util.List;
  *
  * @author katherine
  */
-public class AutorDAO implements SistemaDAO<Autor> {
+public class AutorDAOMemoria implements SistemaDAO<Autor> {
 
-    private ArrayList<Autor> autores;
+    private List<Autor> autores;
 
-    public AutorDAO() {
+    public AutorDAOMemoria() {
         autores = new ArrayList<>();
     }
     
 
     @Override
-    public Autor agregar(Autor datos) {
+    public void agregar(Autor datos) {
         autores.add(datos);
-        return datos;
     }
 
     @Override
@@ -49,7 +48,7 @@ public class AutorDAO implements SistemaDAO<Autor> {
     }
 
     @Override
-    public Autor actualizar(Autor datos) {
+    public void actualizar(Autor datos) {
         for(Autor a : autores){
             if(a.getCedula().equals(datos.getCedula())){
                 a.setNombre(datos.getNombre());
@@ -59,10 +58,8 @@ public class AutorDAO implements SistemaDAO<Autor> {
                 a.setNacionalidad(datos.getNacionalidad());
                 a.setGeneroLiterario(datos.getGeneroLiterario());
                 a.setBibliografia(datos.getBibliografia());
-                return a;
             }
         }
-        return null;
     }
 
     @Override

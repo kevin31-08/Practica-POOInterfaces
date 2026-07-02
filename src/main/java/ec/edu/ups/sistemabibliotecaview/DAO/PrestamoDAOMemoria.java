@@ -12,18 +12,17 @@ import java.util.List;
  *
  * @author katherine
  */
-public class PrestamoDAO implements SistemaDAO<Prestamo>{
-    private ArrayList<Prestamo> prestamos;
+public class PrestamoDAOMemoria implements SistemaDAO<Prestamo>{
+    private List<Prestamo> prestamos;
 
-    public PrestamoDAO() {
+    public PrestamoDAOMemoria() {
         prestamos = new ArrayList<>();
     }
     
     
     @Override
-    public Prestamo agregar(Prestamo datos) {
+    public void agregar(Prestamo datos) {
         prestamos.add(datos);
-        return datos;
     }
 
     @Override
@@ -48,8 +47,8 @@ public class PrestamoDAO implements SistemaDAO<Prestamo>{
    }
 
     @Override
-    public Prestamo actualizar(Prestamo datos) {
-                for (Prestamo p : prestamos) {
+    public void actualizar(Prestamo datos) {
+        for (Prestamo p : prestamos) {
             if (p.getCodigoPrestamo().equals(datos.getCodigoPrestamo())) {
 
                 p.setUsuario(datos.getUsuario());
@@ -57,11 +56,8 @@ public class PrestamoDAO implements SistemaDAO<Prestamo>{
                 p.setBibliotecario(datos.getBibliotecario());
                 p.setFechaPrestamo(datos.getFechaPrestamo());
                 p.setFechaDevolucion(datos.getFechaDevolucion());
-
-                return p;
             }
         }
-        return null;
     }
 
     @Override

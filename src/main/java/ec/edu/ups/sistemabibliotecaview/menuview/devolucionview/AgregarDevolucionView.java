@@ -8,12 +8,12 @@ package ec.edu.ups.sistemabibliotecaview.menuview.devolucionview;
  *
  * @author katherine
  */
-public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
+public class AgregarDevolucionView extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form AgregarDevolcuionView
      */
-    public AgregarDevolcuionView() {
+    public AgregarDevolucionView() {
         initComponents();
     }
 
@@ -31,24 +31,24 @@ public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         btnAgregarPrestamo = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelBibliotecarioAgregarDevolucion = new javax.swing.JLabel();
         txtUsuarioAgregarPrestamo = new javax.swing.JTextField();
         txtTituloAgregarPrestamo = new javax.swing.JTextField();
         btbCancelarUsuario = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelFechaPrestamoAgregarDevolucion = new javax.swing.JLabel();
+        jLabelUsuarioAgregarDevolucion = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         txtCodigoAgregarPrestamo = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelLibroAgregarDevolucion = new javax.swing.JLabel();
+        jLabelCdPrestamo = new javax.swing.JLabel();
         txtNombreAgregarPrestamo = new javax.swing.JTextField();
         txtFechaAgregarPrestamo = new javax.swing.JTextField();
-        btnBuscarUsuarioPrestamo = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
+        btnBuscarAgregarDevolucion = new javax.swing.JButton();
+        jLabelFechaDevolucionAgregarDevolucion = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelAgregarDevolucion = new javax.swing.JLabel();
         txtISBNAgregarPrestamo = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelISBNAgregarDevolucion = new javax.swing.JLabel();
         txtBibliotecarioAgregarPrestamo = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
 
@@ -62,35 +62,40 @@ public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
         btnBuscarLibro.setText("Buscar");
         btnBuscarLibro.addActionListener(this::btnBuscarLibroActionPerformed);
 
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Agregar Devolucion");
+
         btnAgregarPrestamo.setBackground(new java.awt.Color(0, 102, 153));
         btnAgregarPrestamo.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregarPrestamo.setText("Guardar");
         btnAgregarPrestamo.addActionListener(this::btnAgregarPrestamoActionPerformed);
 
-        jLabel6.setText("Bibliotecario:");
+        jLabelBibliotecarioAgregarDevolucion.setText("Bibliotecario:");
 
         btbCancelarUsuario.setText("Cancelar");
         btbCancelarUsuario.addActionListener(this::btbCancelarUsuarioActionPerformed);
 
-        jLabel5.setText("FechaPrestamo:");
+        jLabelFechaPrestamoAgregarDevolucion.setText("FechaPrestamo:");
 
-        jLabel3.setText("Usuario:");
+        jLabelUsuarioAgregarDevolucion.setText("Usuario:");
 
-        jLabel10.setText("Libro:");
+        jLabelLibroAgregarDevolucion.setText("Libro:");
 
-        jLabel2.setText("Codigo del Prestamo:");
+        jLabelCdPrestamo.setText("Codigo del Prestamo:");
 
-        btnBuscarUsuarioPrestamo.setBackground(new java.awt.Color(0, 102, 153));
-        btnBuscarUsuarioPrestamo.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarUsuarioPrestamo.setText("Buscar");
-        btnBuscarUsuarioPrestamo.addActionListener(this::btnBuscarUsuarioPrestamoActionPerformed);
+        btnBuscarAgregarDevolucion.setBackground(new java.awt.Color(0, 102, 153));
+        btnBuscarAgregarDevolucion.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarAgregarDevolucion.setText("Buscar");
+        btnBuscarAgregarDevolucion.addActionListener(this::btnBuscarAgregarDevolucionActionPerformed);
 
-        jLabel7.setText("Fecha Devolucion:");
+        jLabelFechaDevolucionAgregarDevolucion.setText("Fecha Devolucion:");
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("DEVOLUCION DE LIBROS");
+        jLabelAgregarDevolucion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelAgregarDevolucion.setText("DEVOLUCION DE LIBROS");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -98,18 +103,18 @@ public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(77, 77, 77)
-                .addComponent(jLabel1)
+                .addComponent(jLabelAgregarDevolucion)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelAgregarDevolucion)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel4.setText("Libro(ISBN):");
+        jLabelISBNAgregarDevolucion.setText("Libro(ISBN):");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -124,21 +129,21 @@ public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel7)
+                                .addComponent(jLabelFechaDevolucionAgregarDevolucion)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txtFechaAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
+                                .addComponent(jLabelCdPrestamo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtCodigoAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(btnBuscarUsuarioPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnBuscarAgregarDevolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel10)
-                                    .addComponent(jLabel3))
+                                    .addComponent(jLabelISBNAgregarDevolucion)
+                                    .addComponent(jLabelBibliotecarioAgregarDevolucion)
+                                    .addComponent(jLabelLibroAgregarDevolucion)
+                                    .addComponent(jLabelUsuarioAgregarDevolucion))
                                 .addGap(51, 51, 51)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtUsuarioAgregarPrestamo, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
@@ -146,7 +151,7 @@ public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
                                     .addComponent(txtNombreAgregarPrestamo, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
                                     .addComponent(txtTituloAgregarPrestamo)
                                     .addComponent(txtBibliotecarioAgregarPrestamo)))
-                            .addComponent(jLabel5)
+                            .addComponent(jLabelFechaPrestamoAgregarDevolucion)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(50, 50, 50)
                                 .addComponent(btnAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -163,36 +168,36 @@ public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel2)
+                        .addComponent(jLabelCdPrestamo)
                         .addComponent(txtCodigoAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnBuscarUsuarioPrestamo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBuscarAgregarDevolucion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(jLabelUsuarioAgregarDevolucion)
                     .addComponent(txtUsuarioAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNombreAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
+                    .addComponent(jLabelLibroAgregarDevolucion))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
+                    .addComponent(jLabelISBNAgregarDevolucion)
                     .addComponent(txtISBNAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(11, 11, 11)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
+                    .addComponent(jLabelBibliotecarioAgregarDevolucion)
                     .addComponent(txtTituloAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
+                    .addComponent(jLabelFechaPrestamoAgregarDevolucion)
                     .addComponent(txtBibliotecarioAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
+                    .addComponent(jLabelFechaDevolucionAgregarDevolucion)
                     .addComponent(txtFechaAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -212,9 +217,9 @@ public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btbCancelarUsuarioActionPerformed
 
-    private void btnBuscarUsuarioPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioPrestamoActionPerformed
+    private void btnBuscarAgregarDevolucionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarAgregarDevolucionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarUsuarioPrestamoActionPerformed
+    }//GEN-LAST:event_btnBuscarAgregarDevolucionActionPerformed
 
     private void btnBuscarLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarLibroActionPerformed
         // TODO add your handling code here:
@@ -228,17 +233,17 @@ public class AgregarDevolcuionView extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btbCancelarUsuario;
     private javax.swing.JButton btnAgregarPrestamo;
+    private javax.swing.JButton btnBuscarAgregarDevolucion;
     private javax.swing.JButton btnBuscarLibro;
-    private javax.swing.JButton btnBuscarUsuarioPrestamo;
     private javax.swing.JButton btnBuscarUsuarioPrestamo1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabelAgregarDevolucion;
+    private javax.swing.JLabel jLabelBibliotecarioAgregarDevolucion;
+    private javax.swing.JLabel jLabelCdPrestamo;
+    private javax.swing.JLabel jLabelFechaDevolucionAgregarDevolucion;
+    private javax.swing.JLabel jLabelFechaPrestamoAgregarDevolucion;
+    private javax.swing.JLabel jLabelISBNAgregarDevolucion;
+    private javax.swing.JLabel jLabelLibroAgregarDevolucion;
+    private javax.swing.JLabel jLabelUsuarioAgregarDevolucion;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;

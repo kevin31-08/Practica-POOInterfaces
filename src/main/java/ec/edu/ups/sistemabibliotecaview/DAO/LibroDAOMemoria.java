@@ -12,19 +12,18 @@ import java.util.List;
  *
  * @author katherine
  */
-public class LibroDAO implements SistemaDAO<Libro> {
+public class LibroDAOMemoria implements SistemaDAO<Libro> {
 
-    private ArrayList<Libro> libros = new ArrayList<>();
+    private List<Libro> libros = new ArrayList<>();
 
-    public LibroDAO() {
+    public LibroDAOMemoria() {
         libros = new ArrayList<>();
     }
 
     
     @Override
-    public Libro agregar(Libro libro) {
+    public void agregar(Libro libro) {
         libros.add(libro);
-        return libro;
     }
 
   
@@ -40,17 +39,15 @@ public class LibroDAO implements SistemaDAO<Libro> {
 
     
     @Override
-    public Libro actualizar(Libro libro) {
+    public void actualizar(Libro libro) {
         for (Libro l : libros) {
             if (l.getIsbn().equals(libro.getIsbn())) {
 
                 l.setTitulo(libro.getTitulo());
                 l.setAutor(libro.getAutor());
                 l.setEditorial(libro.getEditorial());
-                return l;
             }
         }
-        return null;
     }
 
   

@@ -28,48 +28,54 @@ public class ActualizarAutorView extends javax.swing.JInternalFrame {
 
         txtActualizarAutorApellido = new javax.swing.JTextField();
         txtActualizarAutorBibliografia = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        btbGuardarUsuario1 = new javax.swing.JButton();
+        jLabelApellidoAutor = new javax.swing.JLabel();
+        btbGuardarActualizarAutor = new javax.swing.JButton();
         txtActualizarAutorNombre = new javax.swing.JTextField();
-        btbCancelarUsuario = new javax.swing.JButton();
+        btbCancelarActualizarAutor = new javax.swing.JButton();
         txtActualizarAutorFecha = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelNombreAutor = new javax.swing.JLabel();
         txtActualizarAutorCedula = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelFechaNacimientoAutor = new javax.swing.JLabel();
+        jLabelCedulaAutor = new javax.swing.JLabel();
         txtActualizarAutorGenero = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabelGeneroLiterarioAutor = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelActualizarAutor = new javax.swing.JLabel();
         txtActualizarAutorTelefono = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelTelefonoAutor = new javax.swing.JLabel();
         txtActualizarAutorNacionalidad = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        btbGuardarUsuario2 = new javax.swing.JButton();
+        jLabelNacionalidadAutor = new javax.swing.JLabel();
+        jLabelBibliografiaAutor = new javax.swing.JLabel();
+        btbBuscarActualizarAutor = new javax.swing.JButton();
 
-        jLabel4.setText("Apellido:");
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Eliminar Autor");
+        setToolTipText("");
 
-        btbGuardarUsuario1.setBackground(new java.awt.Color(0, 102, 153));
-        btbGuardarUsuario1.setForeground(new java.awt.Color(255, 255, 255));
-        btbGuardarUsuario1.setText("Guardar");
-        btbGuardarUsuario1.addActionListener(this::btbGuardarUsuario1ActionPerformed);
+        jLabelApellidoAutor.setText("Apellido:");
 
-        btbCancelarUsuario.setText("Cancelar");
-        btbCancelarUsuario.addActionListener(this::btbCancelarUsuarioActionPerformed);
+        btbGuardarActualizarAutor.setBackground(new java.awt.Color(0, 102, 153));
+        btbGuardarActualizarAutor.setForeground(new java.awt.Color(255, 255, 255));
+        btbGuardarActualizarAutor.setText("Guardar");
+        btbGuardarActualizarAutor.addActionListener(this::btbGuardarActualizarAutorActionPerformed);
 
-        jLabel3.setText("Nombre:");
+        btbCancelarActualizarAutor.setText("Cancelar");
+        btbCancelarActualizarAutor.addActionListener(this::btbCancelarActualizarAutorActionPerformed);
 
-        jLabel8.setText("Fecha de Nacimiento:");
+        jLabelNombreAutor.setText("Nombre:");
 
-        jLabel2.setText("Cedula:");
+        jLabelFechaNacimientoAutor.setText("Fecha de Nacimiento:");
 
-        jLabel7.setText("Genero Literario:");
+        jLabelCedulaAutor.setText("Cedula:");
+
+        jLabelGeneroLiterarioAutor.setText("Genero Literario:");
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("ACTUALIZAR AUTOR");
+        jLabelActualizarAutor.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelActualizarAutor.setText("ACTUALIZAR AUTOR");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -77,27 +83,27 @@ public class ActualizarAutorView extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(85, 85, 85)
-                .addComponent(jLabel1)
+                .addComponent(jLabelActualizarAutor)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelActualizarAutor)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel6.setText("Telefono:");
+        jLabelTelefonoAutor.setText("Telefono:");
 
-        jLabel5.setText("Nacionalidad:");
+        jLabelNacionalidadAutor.setText("Nacionalidad:");
 
-        jLabel9.setText("Bibliografia:");
+        jLabelBibliografiaAutor.setText("Bibliografia:");
 
-        btbGuardarUsuario2.setBackground(new java.awt.Color(0, 102, 153));
-        btbGuardarUsuario2.setForeground(new java.awt.Color(255, 255, 255));
-        btbGuardarUsuario2.setText("Buscar");
-        btbGuardarUsuario2.addActionListener(this::btbGuardarUsuario2ActionPerformed);
+        btbBuscarActualizarAutor.setBackground(new java.awt.Color(0, 102, 153));
+        btbBuscarActualizarAutor.setForeground(new java.awt.Color(255, 255, 255));
+        btbBuscarActualizarAutor.setText("Buscar");
+        btbBuscarActualizarAutor.addActionListener(this::btbBuscarActualizarAutorActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -115,47 +121,47 @@ public class ActualizarAutorView extends javax.swing.JInternalFrame {
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtActualizarAutorNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel3))
+                                .addComponent(jLabelNombreAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtActualizarAutorCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel2))
+                                .addComponent(jLabelCedulaAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtActualizarAutorApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel4))
+                                .addComponent(jLabelApellidoAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtActualizarAutorNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel5))
+                                .addComponent(jLabelNacionalidadAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtActualizarAutorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6))
+                                .addComponent(jLabelTelefonoAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtActualizarAutorGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel7))
+                                .addComponent(jLabelGeneroLiterarioAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8)
-                                .addComponent(jLabel9)
+                                .addComponent(jLabelFechaNacimientoAutor)
+                                .addComponent(jLabelBibliografiaAutor)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btbGuardarUsuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btbGuardarActualizarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(btbCancelarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btbCancelarActualizarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtActualizarAutorFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtActualizarAutorBibliografia, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btbGuardarUsuario2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btbBuscarActualizarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -165,75 +171,75 @@ public class ActualizarAutorView extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabelCedulaAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtActualizarAutorCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btbGuardarUsuario2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btbBuscarActualizarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
+                .addComponent(jLabelNombreAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtActualizarAutorNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(jLabelApellidoAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtActualizarAutorApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(jLabelNacionalidadAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtActualizarAutorNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(jLabelTelefonoAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtActualizarAutorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(jLabelGeneroLiterarioAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtActualizarAutorGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(jLabelFechaNacimientoAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtActualizarAutorFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel9)
+                .addComponent(jLabelBibliografiaAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtActualizarAutorBibliografia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btbGuardarUsuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btbCancelarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btbGuardarActualizarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btbCancelarActualizarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btbGuardarUsuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbGuardarUsuario1ActionPerformed
+    private void btbGuardarActualizarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbGuardarActualizarAutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btbGuardarUsuario1ActionPerformed
+    }//GEN-LAST:event_btbGuardarActualizarAutorActionPerformed
 
-    private void btbCancelarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarUsuarioActionPerformed
+    private void btbCancelarActualizarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarActualizarAutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btbCancelarUsuarioActionPerformed
+    }//GEN-LAST:event_btbCancelarActualizarAutorActionPerformed
 
-    private void btbGuardarUsuario2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbGuardarUsuario2ActionPerformed
+    private void btbBuscarActualizarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbBuscarActualizarAutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btbGuardarUsuario2ActionPerformed
+    }//GEN-LAST:event_btbBuscarActualizarAutorActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btbCancelarUsuario;
-    private javax.swing.JButton btbGuardarUsuario1;
-    private javax.swing.JButton btbGuardarUsuario2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton btbBuscarActualizarAutor;
+    private javax.swing.JButton btbCancelarActualizarAutor;
+    private javax.swing.JButton btbGuardarActualizarAutor;
+    private javax.swing.JLabel jLabelActualizarAutor;
+    private javax.swing.JLabel jLabelApellidoAutor;
+    private javax.swing.JLabel jLabelBibliografiaAutor;
+    private javax.swing.JLabel jLabelCedulaAutor;
+    private javax.swing.JLabel jLabelFechaNacimientoAutor;
+    private javax.swing.JLabel jLabelGeneroLiterarioAutor;
+    private javax.swing.JLabel jLabelNacionalidadAutor;
+    private javax.swing.JLabel jLabelNombreAutor;
+    private javax.swing.JLabel jLabelTelefonoAutor;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField txtActualizarAutorApellido;
     private javax.swing.JTextField txtActualizarAutorBibliografia;

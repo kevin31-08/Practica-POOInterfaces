@@ -38,24 +38,24 @@ public class BuscarBibliotecarioView extends javax.swing.JInternalFrame {
         btnBucsarBibliotecario1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelBuscarBibliotecario = new javax.swing.JLabel();
+        jLabelCedulaBuscarBibliotecario = new javax.swing.JLabel();
         txtBuscarCedulaBibliotecario = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelNombreBuscarBibliotecario = new javax.swing.JLabel();
         txtBuscarNombreBibliotecario = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelApellidoBuscarBibliotecario = new javax.swing.JLabel();
         txtBuscarApellidoBibliotecario = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        jLabelCargoBuscarBibliotecario = new javax.swing.JLabel();
         txtBuscarCargoBibliotecario = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelTelefonoBuscarBibliotecario = new javax.swing.JLabel();
         txtBuscarTelefonoBibliotecario = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabelCodigoBuscarBibliotecario = new javax.swing.JLabel();
         txtBuscarCodigoBibliotecario = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        jLabelFechaNacimientoBuscarBibliotecario = new javax.swing.JLabel();
         txtBuscarFechaBibliotecario = new javax.swing.JTextField();
-        btbCancelarBibliotecario = new javax.swing.JButton();
-        btnBucsarBibliotecario = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
+        btbCancelarBuscarBibliotecario = new javax.swing.JButton();
+        btnBucarBscrBibliotecario = new javax.swing.JButton();
+        jLabelTurnoBuscarBibliotecario = new javax.swing.JLabel();
         txtBuscarTurnoBibliotecario = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -120,10 +120,15 @@ public class BuscarBibliotecarioView extends javax.swing.JInternalFrame {
         btnBucsarBibliotecario1.setText("Buscar");
         btnBucsarBibliotecario1.addActionListener(this::btnBucsarBibliotecario1ActionPerformed);
 
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Buscar Bibliotecario");
+
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("BUSCAR BIBLIOTECARIO");
+        jLabelBuscarBibliotecario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelBuscarBibliotecario.setText("BUSCAR BIBLIOTECARIO");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -131,40 +136,40 @@ public class BuscarBibliotecarioView extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLabel1)
+                .addComponent(jLabelBuscarBibliotecario)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelBuscarBibliotecario)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel2.setText("Cedula:");
+        jLabelCedulaBuscarBibliotecario.setText("Cedula:");
 
-        jLabel3.setText("Nombre:");
+        jLabelNombreBuscarBibliotecario.setText("Nombre:");
 
-        jLabel4.setText("Apellido:");
+        jLabelApellidoBuscarBibliotecario.setText("Apellido:");
 
-        jLabel5.setText("Cargo:");
+        jLabelCargoBuscarBibliotecario.setText("Cargo:");
 
-        jLabel6.setText("Telefono:");
+        jLabelTelefonoBuscarBibliotecario.setText("Telefono:");
 
-        jLabel7.setText("Codigo:");
+        jLabelCodigoBuscarBibliotecario.setText("Codigo:");
 
-        jLabel8.setText("Fecha de Nacimiento:");
+        jLabelFechaNacimientoBuscarBibliotecario.setText("Fecha de Nacimiento:");
 
-        btbCancelarBibliotecario.setText("Cancelar");
-        btbCancelarBibliotecario.addActionListener(this::btbCancelarBibliotecarioActionPerformed);
+        btbCancelarBuscarBibliotecario.setText("Cancelar");
+        btbCancelarBuscarBibliotecario.addActionListener(this::btbCancelarBuscarBibliotecarioActionPerformed);
 
-        btnBucsarBibliotecario.setBackground(new java.awt.Color(0, 102, 153));
-        btnBucsarBibliotecario.setForeground(new java.awt.Color(255, 255, 255));
-        btnBucsarBibliotecario.setText("Buscar");
-        btnBucsarBibliotecario.addActionListener(this::btnBucsarBibliotecarioActionPerformed);
+        btnBucarBscrBibliotecario.setBackground(new java.awt.Color(0, 102, 153));
+        btnBucarBscrBibliotecario.setForeground(new java.awt.Color(255, 255, 255));
+        btnBucarBscrBibliotecario.setText("Buscar");
+        btnBucarBscrBibliotecario.addActionListener(this::btnBucarBscrBibliotecarioActionPerformed);
 
-        jLabel9.setText("Turno:");
+        jLabelTurnoBuscarBibliotecario.setText("Turno:");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -182,37 +187,37 @@ public class BuscarBibliotecarioView extends javax.swing.JInternalFrame {
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarNombreBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel3))
+                                .addComponent(jLabelNombreBuscarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarCedulaBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel2))
+                                .addComponent(jLabelCedulaBuscarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarApellidoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel4))
+                                .addComponent(jLabelApellidoBuscarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarCargoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel5))
+                                .addComponent(jLabelCargoBuscarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarTelefonoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6))
+                                .addComponent(jLabelTelefonoBuscarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarCodigoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel7))
+                                .addComponent(jLabelCodigoBuscarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8)
+                                .addComponent(jLabelFechaNacimientoBuscarBibliotecario)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel9)
+                                        .addComponent(jLabelTurnoBuscarBibliotecario)
                                         .addGroup(jPanel3Layout.createSequentialGroup()
                                             .addGap(6, 6, 6)
                                             .addComponent(txtBuscarTurnoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -221,9 +226,9 @@ public class BuscarBibliotecarioView extends javax.swing.JInternalFrame {
                                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(txtBuscarFechaBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                                .addComponent(btnBucsarBibliotecario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(btnBucarBscrBibliotecario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(btbCancelarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                                                .addComponent(btbCancelarBuscarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -233,41 +238,41 @@ public class BuscarBibliotecarioView extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabelCedulaBuscarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarCedulaBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
+                .addComponent(jLabelNombreBuscarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarNombreBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(jLabelApellidoBuscarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarApellidoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(jLabelCargoBuscarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarCargoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(jLabelTelefonoBuscarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarTelefonoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(jLabelCodigoBuscarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarCodigoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(jLabelFechaNacimientoBuscarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarFechaBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel9)
+                .addComponent(jLabelTurnoBuscarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarTurnoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBucsarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btbCancelarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBucarBscrBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btbCancelarBuscarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -304,13 +309,13 @@ public class BuscarBibliotecarioView extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnLibrosActionPerformed
 
-    private void btbCancelarBibliotecarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarBibliotecarioActionPerformed
+    private void btbCancelarBuscarBibliotecarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarBuscarBibliotecarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btbCancelarBibliotecarioActionPerformed
+    }//GEN-LAST:event_btbCancelarBuscarBibliotecarioActionPerformed
 
-    private void btnBucsarBibliotecarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBucsarBibliotecarioActionPerformed
+    private void btnBucarBscrBibliotecarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBucarBscrBibliotecarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBucsarBibliotecarioActionPerformed
+    }//GEN-LAST:event_btnBucarBscrBibliotecarioActionPerformed
 
     private void btnBucsarBibliotecario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBucsarBibliotecario1ActionPerformed
         // TODO add your handling code here:
@@ -318,24 +323,24 @@ public class BuscarBibliotecarioView extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btbCancelarBibliotecario;
+    private javax.swing.JButton btbCancelarBuscarBibliotecario;
     private javax.swing.JButton btnAutores;
     private javax.swing.JButton btnBibliotecarios;
-    private javax.swing.JButton btnBucsarBibliotecario;
+    private javax.swing.JButton btnBucarBscrBibliotecario;
     private javax.swing.JButton btnBucsarBibliotecario1;
     private javax.swing.JButton btnDevoluciones;
     private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnLibros;
     private javax.swing.JButton btnPrestamo;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelApellidoBuscarBibliotecario;
+    private javax.swing.JLabel jLabelBuscarBibliotecario;
+    private javax.swing.JLabel jLabelCargoBuscarBibliotecario;
+    private javax.swing.JLabel jLabelCedulaBuscarBibliotecario;
+    private javax.swing.JLabel jLabelCodigoBuscarBibliotecario;
+    private javax.swing.JLabel jLabelFechaNacimientoBuscarBibliotecario;
+    private javax.swing.JLabel jLabelNombreBuscarBibliotecario;
+    private javax.swing.JLabel jLabelTelefonoBuscarBibliotecario;
+    private javax.swing.JLabel jLabelTurnoBuscarBibliotecario;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

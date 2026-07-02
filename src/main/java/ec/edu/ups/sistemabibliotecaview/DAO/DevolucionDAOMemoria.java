@@ -12,12 +12,17 @@ import java.util.List;
  *
  * @author katherine
  */
-public class DevolucionDAO implements SistemaDAO<Devolucion>{
-    private ArrayList<Devolucion> devoluciones;
+public class DevolucionDAOMemoria implements SistemaDAO<Devolucion>{
+    private List<Devolucion> devoluciones;
+    
+    public DevolucionDAOMemoria() {
+        devoluciones = new ArrayList<>();
+    }
+    
     @Override
-    public Devolucion agregar(Devolucion datos) {
+    public void agregar(Devolucion datos) {
         devoluciones.add(datos);
-        return datos;
+
    }
 
     @Override
@@ -41,15 +46,13 @@ public class DevolucionDAO implements SistemaDAO<Devolucion>{
     }
 
     @Override
-    public Devolucion actualizar(Devolucion datos) {
+    public void actualizar(Devolucion datos) {
          for (Devolucion d : devoluciones) {
             if (d.getIsbnLibro().equals(datos.getIsbnLibro())) {
                 d.setPrestamo(datos.getPrestamo());
                 d.setFechaDevolucion(datos.getFechaDevolucion());               
-                return d;
             }
         }
-        return null;
     }
 
     @Override

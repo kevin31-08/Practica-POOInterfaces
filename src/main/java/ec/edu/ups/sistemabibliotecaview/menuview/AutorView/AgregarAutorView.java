@@ -28,30 +28,36 @@ public class AgregarAutorView extends javax.swing.JInternalFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelAgregarAutor = new javax.swing.JLabel();
+        jLabelCedulaAgregarAutor = new javax.swing.JLabel();
         txtAgregarAutor = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelNombreAgregarAutor = new javax.swing.JLabel();
         txtNombreAgregarAutor = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelApellidoAgregarAutor = new javax.swing.JLabel();
         txtApellidoAgregarAutor = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        jLabelNacionalidadAgregarAutor = new javax.swing.JLabel();
         txtNacionalidadAgregarAutor = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelTelefonoAgregarAutor = new javax.swing.JLabel();
         txtTelefonoAgregarAutor = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabelGeneroLiterarioAgregarAutor = new javax.swing.JLabel();
         txtGeneroAgregarAutor = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        jLabelFechaNacimientoAgregarAutor = new javax.swing.JLabel();
         txtFechaUsuario = new javax.swing.JTextField();
-        btbCancelarUsuario = new javax.swing.JButton();
-        btnGuardarAutor = new javax.swing.JButton();
+        btbCancelarAgregarAutor = new javax.swing.JButton();
+        btnGuardarAgregarAutor = new javax.swing.JButton();
         txtBibliografiaAgregarAutor = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        jLabelBibliografiaAgregarAutor = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(51, 51, 255));
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Agregar Autor");
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("REGISTRO DE AUTOR");
+        jLabelAgregarAutor.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelAgregarAutor.setText("REGISTRO DE AUTOR");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -59,40 +65,40 @@ public class AgregarAutorView extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addComponent(jLabel1)
+                .addComponent(jLabelAgregarAutor)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelAgregarAutor)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel2.setText("Cedula:");
+        jLabelCedulaAgregarAutor.setText("Cedula:");
 
-        jLabel3.setText("Nombre:");
+        jLabelNombreAgregarAutor.setText("Nombre:");
 
-        jLabel4.setText("Apellido:");
+        jLabelApellidoAgregarAutor.setText("Apellido:");
 
-        jLabel5.setText("Nacionalidad:");
+        jLabelNacionalidadAgregarAutor.setText("Nacionalidad:");
 
-        jLabel6.setText("Telefono:");
+        jLabelTelefonoAgregarAutor.setText("Telefono:");
 
-        jLabel7.setText("Genero Literario:");
+        jLabelGeneroLiterarioAgregarAutor.setText("Genero Literario:");
 
-        jLabel8.setText("Fecha de Nacimiento:");
+        jLabelFechaNacimientoAgregarAutor.setText("Fecha de Nacimiento:");
 
-        btbCancelarUsuario.setText("Cancelar");
-        btbCancelarUsuario.addActionListener(this::btbCancelarUsuarioActionPerformed);
+        btbCancelarAgregarAutor.setText("Cancelar");
+        btbCancelarAgregarAutor.addActionListener(this::btbCancelarAgregarAutorActionPerformed);
 
-        btnGuardarAutor.setBackground(new java.awt.Color(0, 102, 153));
-        btnGuardarAutor.setForeground(new java.awt.Color(255, 255, 255));
-        btnGuardarAutor.setText("Guardar");
-        btnGuardarAutor.addActionListener(this::btnGuardarAutorActionPerformed);
+        btnGuardarAgregarAutor.setBackground(new java.awt.Color(0, 102, 153));
+        btnGuardarAgregarAutor.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarAgregarAutor.setText("Guardar");
+        btnGuardarAgregarAutor.addActionListener(this::btnGuardarAgregarAutorActionPerformed);
 
-        jLabel9.setText("Bibliografia:");
+        jLabelBibliografiaAgregarAutor.setText("Bibliografia:");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -110,39 +116,39 @@ public class AgregarAutorView extends javax.swing.JInternalFrame {
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtNombreAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel3))
+                                .addComponent(jLabelNombreAgregarAutor))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel2))
+                                .addComponent(jLabelCedulaAgregarAutor))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtApellidoAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel4))
+                                .addComponent(jLabelApellidoAgregarAutor))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtNacionalidadAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel5))
+                                .addComponent(jLabelNacionalidadAgregarAutor))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtTelefonoAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6))
+                                .addComponent(jLabelTelefonoAgregarAutor))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtGeneroAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel7))
+                                .addComponent(jLabelGeneroLiterarioAgregarAutor))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8)
+                                .addComponent(jLabelFechaNacimientoAgregarAutor)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addComponent(btnGuardarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnGuardarAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(btbCancelarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel9)
+                                    .addComponent(btbCancelarAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabelBibliografiaAgregarAutor)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,41 +163,41 @@ public class AgregarAutorView extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabelCedulaAgregarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
+                .addComponent(jLabelNombreAgregarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtNombreAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(jLabelApellidoAgregarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtApellidoAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(jLabelNacionalidadAgregarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtNacionalidadAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(jLabelTelefonoAgregarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtTelefonoAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(jLabelGeneroLiterarioAgregarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtGeneroAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(jLabelFechaNacimientoAgregarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtFechaUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel9)
+                .addComponent(jLabelBibliografiaAgregarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBibliografiaAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnGuardarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btbCancelarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnGuardarAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btbCancelarAgregarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -215,27 +221,27 @@ public class AgregarAutorView extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btbCancelarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarUsuarioActionPerformed
+    private void btbCancelarAgregarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarAgregarAutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btbCancelarUsuarioActionPerformed
+    }//GEN-LAST:event_btbCancelarAgregarAutorActionPerformed
 
-    private void btnGuardarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAutorActionPerformed
+    private void btnGuardarAgregarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAgregarAutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarAutorActionPerformed
+    }//GEN-LAST:event_btnGuardarAgregarAutorActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btbCancelarUsuario;
-    private javax.swing.JButton btnGuardarAutor;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton btbCancelarAgregarAutor;
+    private javax.swing.JButton btnGuardarAgregarAutor;
+    private javax.swing.JLabel jLabelAgregarAutor;
+    private javax.swing.JLabel jLabelApellidoAgregarAutor;
+    private javax.swing.JLabel jLabelBibliografiaAgregarAutor;
+    private javax.swing.JLabel jLabelCedulaAgregarAutor;
+    private javax.swing.JLabel jLabelFechaNacimientoAgregarAutor;
+    private javax.swing.JLabel jLabelGeneroLiterarioAgregarAutor;
+    private javax.swing.JLabel jLabelNacionalidadAgregarAutor;
+    private javax.swing.JLabel jLabelNombreAgregarAutor;
+    private javax.swing.JLabel jLabelTelefonoAgregarAutor;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField txtAgregarAutor;

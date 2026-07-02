@@ -12,14 +12,17 @@ import java.util.List;
  *
  * @author katherine
  */
-public class BibliotecarioDAO implements SistemaDAO<Bibliotecario> {
+public class BibliotecarioDAOMemoria implements SistemaDAO<Bibliotecario> {
 
-    private ArrayList<Bibliotecario> bibliotecarios;
+    private List<Bibliotecario> bibliotecarios;
+    
+    public BibliotecarioDAOMemoria(){
+        bibliotecarios = new ArrayList<>();
+    }
 
     @Override
-    public Bibliotecario agregar(Bibliotecario datos) {
+    public void agregar(Bibliotecario datos) {
         bibliotecarios.add(datos);
-        return datos;
     }
 
     @Override
@@ -42,7 +45,7 @@ public class BibliotecarioDAO implements SistemaDAO<Bibliotecario> {
     }
 
     @Override
-    public Bibliotecario actualizar(Bibliotecario datos) {
+    public void actualizar(Bibliotecario datos) {
         for (Bibliotecario b : bibliotecarios) {
             if (b.getCedula().equals(datos.getCedula())) {
                 b.setNombre(datos.getNombre());
@@ -51,11 +54,8 @@ public class BibliotecarioDAO implements SistemaDAO<Bibliotecario> {
                 b.setFechaNacimiento(datos.getFechaNacimiento());
                 b.setCargo(datos.getCargo());
                 b.setTurno(datos.getTurno());
-                
-                return b;
             }
         }
-        return null;
     }
 
     @Override
@@ -67,5 +67,5 @@ public class BibliotecarioDAO implements SistemaDAO<Bibliotecario> {
     public int contar() {
         return bibliotecarios.size();
     }
-
 }
+

@@ -12,18 +12,17 @@ import java.util.List;
  *
  * @author katherine
  */
-public class UsuarioDAO implements SistemaDAO<Usuario> {
+public class UsuarioDAOMemoria implements SistemaDAO<Usuario> {
 
-    private ArrayList<Usuario> usuarios;
+    private List<Usuario> usuarios;
 
-    public UsuarioDAO() {
+    public UsuarioDAOMemoria() {
         usuarios = new ArrayList<>();
     }
 
     @Override
-    public Usuario agregar(Usuario datos) {
+    public void agregar(Usuario datos) {
         usuarios.add(datos);
-        return datos;
     }
 
     @Override
@@ -46,17 +45,19 @@ public class UsuarioDAO implements SistemaDAO<Usuario> {
         }
         return null;
     }
-
+    
     @Override
-    public Usuario actualizar(Usuario datos) {
-        Usuario u = buscar(datos.getCedula());
-
-        u.setNombre(datos.getNombre());
-        u.setApellido(datos.getApellido());
-        u.setTelefono(datos.getTelefono());
-        u.setFechaNacimiento(datos.getFechaNacimiento());
-
-        return u;
+    public void actualizar(Usuario datos) {
+        for (Usuario u : usuarios) {
+            if(u.getCedula().equals(datos.getCedula())){
+                u.setNombre(datos.getNombre());
+                u.setApellido(datos.getApellido());
+                u.setTelefono(datos.getTelefono());
+                u.setFechaNacimiento(datos.getFechaNacimiento());
+                u.setCorreoElectronico(datos.getCorreoElectronico());
+                u.setDireccion(datos.getDireccion());
+            }
+        }
     }
 
     @Override

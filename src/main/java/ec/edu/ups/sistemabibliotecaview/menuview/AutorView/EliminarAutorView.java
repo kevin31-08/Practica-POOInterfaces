@@ -29,36 +29,41 @@ public class EliminarAutorView extends javax.swing.JInternalFrame {
         txtEliminarAutorNombre = new javax.swing.JTextField();
         txtEliminarAutorTelefono = new javax.swing.JTextField();
         btnEliminarAutor = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelApellidoEliminarAutor = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelEliminarAutor = new javax.swing.JLabel();
         txtEliminarAutorBibliografia = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabelGeneroLiterarioEliminarAutor = new javax.swing.JLabel();
         txtEliminarAutorApellido = new javax.swing.JTextField();
         txtEliminarAutorGenero = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        btnBuscarAutorEliminar = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
+        jLabelCedulaEliminarAutor = new javax.swing.JLabel();
+        jLabelFechaNacimientoEliminarAutor = new javax.swing.JLabel();
+        btnBuscarEliminarAutor = new javax.swing.JButton();
+        jLabelBibiografiaEliminarAutor = new javax.swing.JLabel();
         txtEliminarAutorCedula = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        jLabelNombreEliminarAutor = new javax.swing.JLabel();
+        jLabelNacionalidadEliminarAutor = new javax.swing.JLabel();
         txtEliminarAutorFecha = new javax.swing.JTextField();
         txtEliminarAutorNacionalidad = new javax.swing.JTextField();
-        btbCancelarUsuario = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
+        btbCancelarEliminarAutor = new javax.swing.JButton();
+        jLabelTelefonoEliminarAutor = new javax.swing.JLabel();
+
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Eliminar Autor");
 
         btnEliminarAutor.setBackground(new java.awt.Color(0, 102, 153));
         btnEliminarAutor.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminarAutor.setText("Eliminar");
         btnEliminarAutor.addActionListener(this::btnEliminarAutorActionPerformed);
 
-        jLabel4.setText("Apellido:");
+        jLabelApellidoEliminarAutor.setText("Apellido:");
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("ELIMINAR AUTOR");
+        jLabelEliminarAutor.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelEliminarAutor.setText("ELIMINAR AUTOR");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -66,38 +71,38 @@ public class EliminarAutorView extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(85, 85, 85)
-                .addComponent(jLabel1)
+                .addComponent(jLabelEliminarAutor)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelEliminarAutor)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel7.setText("Genero Literario:");
+        jLabelGeneroLiterarioEliminarAutor.setText("Genero Literario:");
 
-        jLabel2.setText("Cedula:");
+        jLabelCedulaEliminarAutor.setText("Cedula:");
 
-        jLabel8.setText("Fecha de Nacimiento:");
+        jLabelFechaNacimientoEliminarAutor.setText("Fecha de Nacimiento:");
 
-        btnBuscarAutorEliminar.setBackground(new java.awt.Color(0, 102, 153));
-        btnBuscarAutorEliminar.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarAutorEliminar.setText("Buscar");
-        btnBuscarAutorEliminar.addActionListener(this::btnBuscarAutorEliminarActionPerformed);
+        btnBuscarEliminarAutor.setBackground(new java.awt.Color(0, 102, 153));
+        btnBuscarEliminarAutor.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarEliminarAutor.setText("Buscar");
+        btnBuscarEliminarAutor.addActionListener(this::btnBuscarEliminarAutorActionPerformed);
 
-        jLabel9.setText("Bibliografia:");
+        jLabelBibiografiaEliminarAutor.setText("Bibliografia:");
 
-        jLabel3.setText("Nombre:");
+        jLabelNombreEliminarAutor.setText("Nombre:");
 
-        jLabel5.setText("Nacionalidad:");
+        jLabelNacionalidadEliminarAutor.setText("Nacionalidad:");
 
-        btbCancelarUsuario.setText("Cancelar");
-        btbCancelarUsuario.addActionListener(this::btbCancelarUsuarioActionPerformed);
+        btbCancelarEliminarAutor.setText("Cancelar");
+        btbCancelarEliminarAutor.addActionListener(this::btbCancelarEliminarAutorActionPerformed);
 
-        jLabel6.setText("Telefono:");
+        jLabelTelefonoEliminarAutor.setText("Telefono:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -115,47 +120,47 @@ public class EliminarAutorView extends javax.swing.JInternalFrame {
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtEliminarAutorNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel3))
+                                .addComponent(jLabelNombreEliminarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtEliminarAutorCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel2))
+                                .addComponent(jLabelCedulaEliminarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtEliminarAutorApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel4))
+                                .addComponent(jLabelApellidoEliminarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtEliminarAutorNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel5))
+                                .addComponent(jLabelNacionalidadEliminarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtEliminarAutorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6))
+                                .addComponent(jLabelTelefonoEliminarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtEliminarAutorGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel7))
+                                .addComponent(jLabelGeneroLiterarioEliminarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8)
-                                .addComponent(jLabel9)
+                                .addComponent(jLabelFechaNacimientoEliminarAutor)
+                                .addComponent(jLabelBibiografiaEliminarAutor)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btnEliminarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(btbCancelarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btbCancelarEliminarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtEliminarAutorFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtEliminarAutorBibliografia, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnBuscarAutorEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnBuscarEliminarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -165,43 +170,43 @@ public class EliminarAutorView extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabelCedulaEliminarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtEliminarAutorCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBuscarAutorEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBuscarEliminarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
+                .addComponent(jLabelNombreEliminarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtEliminarAutorNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(jLabelApellidoEliminarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtEliminarAutorApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(jLabelNacionalidadEliminarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtEliminarAutorNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(jLabelTelefonoEliminarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtEliminarAutorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(jLabelGeneroLiterarioEliminarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtEliminarAutorGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(jLabelFechaNacimientoEliminarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtEliminarAutorFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel9)
+                .addComponent(jLabelBibiografiaEliminarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtEliminarAutorBibliografia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnEliminarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btbCancelarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btbCancelarEliminarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -212,28 +217,28 @@ public class EliminarAutorView extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEliminarAutorActionPerformed
 
-    private void btnBuscarAutorEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarAutorEliminarActionPerformed
+    private void btnBuscarEliminarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarEliminarAutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarAutorEliminarActionPerformed
+    }//GEN-LAST:event_btnBuscarEliminarAutorActionPerformed
 
-    private void btbCancelarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarUsuarioActionPerformed
+    private void btbCancelarEliminarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarEliminarAutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btbCancelarUsuarioActionPerformed
+    }//GEN-LAST:event_btbCancelarEliminarAutorActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btbCancelarUsuario;
-    private javax.swing.JButton btnBuscarAutorEliminar;
+    private javax.swing.JButton btbCancelarEliminarAutor;
+    private javax.swing.JButton btnBuscarEliminarAutor;
     private javax.swing.JButton btnEliminarAutor;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelApellidoEliminarAutor;
+    private javax.swing.JLabel jLabelBibiografiaEliminarAutor;
+    private javax.swing.JLabel jLabelCedulaEliminarAutor;
+    private javax.swing.JLabel jLabelEliminarAutor;
+    private javax.swing.JLabel jLabelFechaNacimientoEliminarAutor;
+    private javax.swing.JLabel jLabelGeneroLiterarioEliminarAutor;
+    private javax.swing.JLabel jLabelNacionalidadEliminarAutor;
+    private javax.swing.JLabel jLabelNombreEliminarAutor;
+    private javax.swing.JLabel jLabelTelefonoEliminarAutor;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField txtEliminarAutorApellido;
     private javax.swing.JTextField txtEliminarAutorBibliografia;

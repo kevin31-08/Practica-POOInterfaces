@@ -29,52 +29,57 @@ public class BuscarAutorView extends javax.swing.JInternalFrame {
         btbGuardarUsuario2 = new javax.swing.JButton();
         txtBuscarAutorApellido = new javax.swing.JTextField();
         txtBuscarAutorBibliografia = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelApellidoBuscarAutor = new javax.swing.JLabel();
         btnBuscarAutor = new javax.swing.JButton();
         txtBuscarAutorNombre = new javax.swing.JTextField();
-        btnCancelarAutor = new javax.swing.JButton();
+        btnCancelarBuscarAutor = new javax.swing.JButton();
         txtBuscarAutorFecha = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelNombreBuscarAutor = new javax.swing.JLabel();
         txtBuscarAutorCedula = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelFechaNacimientoBuscarAutor = new javax.swing.JLabel();
+        jLabelCedulaBuscarAutor = new javax.swing.JLabel();
         txtBuscarAutorGenero = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabelGeneroLiterarioBuscarAutor = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelBuscarAutor = new javax.swing.JLabel();
         txtBuscarAutorTelefono = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelTelefonoBuscarAutor = new javax.swing.JLabel();
         txtBuscarAutorNacionalidad = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        jLabelNacionalidadBuscarAutor = new javax.swing.JLabel();
+        jLabelBibliografiaBuscarAutor = new javax.swing.JLabel();
 
         btbGuardarUsuario2.setBackground(new java.awt.Color(0, 102, 153));
         btbGuardarUsuario2.setForeground(new java.awt.Color(255, 255, 255));
         btbGuardarUsuario2.setText("Buscar");
         btbGuardarUsuario2.addActionListener(this::btbGuardarUsuario2ActionPerformed);
 
-        jLabel4.setText("Apellido:");
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Buscar Autor");
+
+        jLabelApellidoBuscarAutor.setText("Apellido:");
 
         btnBuscarAutor.setBackground(new java.awt.Color(0, 102, 153));
         btnBuscarAutor.setForeground(new java.awt.Color(255, 255, 255));
         btnBuscarAutor.setText("Buscar");
         btnBuscarAutor.addActionListener(this::btnBuscarAutorActionPerformed);
 
-        btnCancelarAutor.setText("Cancelar");
-        btnCancelarAutor.addActionListener(this::btnCancelarAutorActionPerformed);
+        btnCancelarBuscarAutor.setText("Cancelar");
+        btnCancelarBuscarAutor.addActionListener(this::btnCancelarBuscarAutorActionPerformed);
 
-        jLabel3.setText("Nombre:");
+        jLabelNombreBuscarAutor.setText("Nombre:");
 
-        jLabel8.setText("Fecha de Nacimiento:");
+        jLabelFechaNacimientoBuscarAutor.setText("Fecha de Nacimiento:");
 
-        jLabel2.setText("Cedula:");
+        jLabelCedulaBuscarAutor.setText("Cedula:");
 
-        jLabel7.setText("Genero Literario:");
+        jLabelGeneroLiterarioBuscarAutor.setText("Genero Literario:");
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("BUSCAR AUTOR");
+        jLabelBuscarAutor.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelBuscarAutor.setText("BUSCAR AUTOR");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -82,22 +87,22 @@ public class BuscarAutorView extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(57, 57, 57)
-                .addComponent(jLabel1)
+                .addComponent(jLabelBuscarAutor)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelBuscarAutor)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel6.setText("Telefono:");
+        jLabelTelefonoBuscarAutor.setText("Telefono:");
 
-        jLabel5.setText("Nacionalidad:");
+        jLabelNacionalidadBuscarAutor.setText("Nacionalidad:");
 
-        jLabel9.setText("Bibliografia:");
+        jLabelBibliografiaBuscarAutor.setText("Bibliografia:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -115,39 +120,39 @@ public class BuscarAutorView extends javax.swing.JInternalFrame {
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarAutorNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel3))
+                                .addComponent(jLabelNombreBuscarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarAutorCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel2))
+                                .addComponent(jLabelCedulaBuscarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarAutorApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel4))
+                                .addComponent(jLabelApellidoBuscarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarAutorNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel5))
+                                .addComponent(jLabelNacionalidadBuscarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarAutorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6))
+                                .addComponent(jLabelTelefonoBuscarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtBuscarAutorGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel7))
+                                .addComponent(jLabelGeneroLiterarioBuscarAutor))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8)
+                                .addComponent(jLabelFechaNacimientoBuscarAutor)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(btnBuscarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(btnCancelarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel9)
+                                    .addComponent(btnCancelarBuscarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabelBibliografiaBuscarAutor)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,41 +167,41 @@ public class BuscarAutorView extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabelCedulaBuscarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarAutorCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
+                .addComponent(jLabelNombreBuscarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarAutorNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(jLabelApellidoBuscarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarAutorApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(jLabelNacionalidadBuscarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarAutorNacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(jLabelTelefonoBuscarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarAutorTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(jLabelGeneroLiterarioBuscarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarAutorGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(jLabelFechaNacimientoBuscarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarAutorFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel9)
+                .addComponent(jLabelBibliografiaBuscarAutor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBuscarAutorBibliografia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuscarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCancelarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnCancelarBuscarAutor, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -207,9 +212,9 @@ public class BuscarAutorView extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBuscarAutorActionPerformed
 
-    private void btnCancelarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarAutorActionPerformed
+    private void btnCancelarBuscarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarBuscarAutorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelarAutorActionPerformed
+    }//GEN-LAST:event_btnCancelarBuscarAutorActionPerformed
 
     private void btbGuardarUsuario2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbGuardarUsuario2ActionPerformed
         // TODO add your handling code here:
@@ -219,16 +224,16 @@ public class BuscarAutorView extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btbGuardarUsuario2;
     private javax.swing.JButton btnBuscarAutor;
-    private javax.swing.JButton btnCancelarAutor;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton btnCancelarBuscarAutor;
+    private javax.swing.JLabel jLabelApellidoBuscarAutor;
+    private javax.swing.JLabel jLabelBibliografiaBuscarAutor;
+    private javax.swing.JLabel jLabelBuscarAutor;
+    private javax.swing.JLabel jLabelCedulaBuscarAutor;
+    private javax.swing.JLabel jLabelFechaNacimientoBuscarAutor;
+    private javax.swing.JLabel jLabelGeneroLiterarioBuscarAutor;
+    private javax.swing.JLabel jLabelNacionalidadBuscarAutor;
+    private javax.swing.JLabel jLabelNombreBuscarAutor;
+    private javax.swing.JLabel jLabelTelefonoBuscarAutor;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField txtBuscarAutorApellido;
     private javax.swing.JTextField txtBuscarAutorBibliografia;

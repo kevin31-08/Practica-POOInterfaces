@@ -8,12 +8,12 @@ package ec.edu.ups.sistemabibliotecaview.menuview.prestamoview;
  *
  * @author katherine
  */
-public class AgregarPrestamo extends javax.swing.JInternalFrame {
+public class AgregarPrestamoView extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form AgregarPrestamo
      */
-    public AgregarPrestamo() {
+    public AgregarPrestamoView() {
         initComponents();
     }
 
@@ -31,27 +31,27 @@ public class AgregarPrestamo extends javax.swing.JInternalFrame {
         txtFechaUsuario = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         txtISBNAgregarPrestamo = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelISBNAgregarPrestamo = new javax.swing.JLabel();
         btnAgregarPrestamo = new javax.swing.JButton();
         txtUsuarioAgregarPrestamo = new javax.swing.JTextField();
-        btbCancelarUsuario = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        btbCancelarAgregarPrestamo = new javax.swing.JButton();
+        jLabelUCedulaAgregarPrestamo = new javax.swing.JLabel();
         txtCodigoAgregarPrestamo = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelCodigoAgregarPrestamo = new javax.swing.JLabel();
         txtFechaAgregarPrestamo = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabelFechaPrestamoAgregarPrestamo = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelAgregarPrestamo = new javax.swing.JLabel();
         txtBibliotecarioAgregarPrestamo = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelCodigoBibliotecarioAgregarPrestamo = new javax.swing.JLabel();
         txtTituloAgregarPrestamo = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        jLabelTituloAgregarPrestamo = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel10 = new javax.swing.JLabel();
+        jLabelNombreAgregarPrestamo = new javax.swing.JLabel();
         txtNombreAgregarPrestamo = new javax.swing.JTextField();
-        btnBuscarUsuarioPrestamo = new javax.swing.JButton();
+        btnBuscarUAgregarPrestamo = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
-        btnBuscarLibro = new javax.swing.JButton();
+        btnBuscarLAgregarPrestamo = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
 
@@ -59,26 +59,31 @@ public class AgregarPrestamo extends javax.swing.JInternalFrame {
 
         jLabel8.setText("Fecha de Nacimiento:");
 
-        jLabel4.setText("Libro(ISBN):");
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Agregar Prestamo");
+
+        jLabelISBNAgregarPrestamo.setText("Libro(ISBN):");
 
         btnAgregarPrestamo.setBackground(new java.awt.Color(0, 102, 153));
         btnAgregarPrestamo.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregarPrestamo.setText("Guardar");
         btnAgregarPrestamo.addActionListener(this::btnAgregarPrestamoActionPerformed);
 
-        btbCancelarUsuario.setText("Cancelar");
-        btbCancelarUsuario.addActionListener(this::btbCancelarUsuarioActionPerformed);
+        btbCancelarAgregarPrestamo.setText("Cancelar");
+        btbCancelarAgregarPrestamo.addActionListener(this::btbCancelarAgregarPrestamoActionPerformed);
 
-        jLabel3.setText("Usuario(Cedula):");
+        jLabelUCedulaAgregarPrestamo.setText("Usuario(Cedula):");
 
-        jLabel2.setText("Codigo del Prestamo:");
+        jLabelCodigoAgregarPrestamo.setText("Codigo del Prestamo:");
 
-        jLabel7.setText("Fecha prestamo:");
+        jLabelFechaPrestamoAgregarPrestamo.setText("Fecha prestamo:");
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("REGISTRO DE PRESTAMO");
+        jLabelAgregarPrestamo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelAgregarPrestamo.setText("REGISTRO DE PRESTAMO");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -86,32 +91,32 @@ public class AgregarPrestamo extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addComponent(jLabel1)
+                .addComponent(jLabelAgregarPrestamo)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelAgregarPrestamo)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel6.setText("Bibliotecario(Codigo):");
+        jLabelCodigoBibliotecarioAgregarPrestamo.setText("Bibliotecario(Codigo):");
 
-        jLabel5.setText("Titulo:");
+        jLabelTituloAgregarPrestamo.setText("Titulo:");
 
-        jLabel10.setText("Nombre:");
+        jLabelNombreAgregarPrestamo.setText("Nombre:");
 
-        btnBuscarUsuarioPrestamo.setBackground(new java.awt.Color(0, 102, 153));
-        btnBuscarUsuarioPrestamo.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarUsuarioPrestamo.setText("Buscar");
-        btnBuscarUsuarioPrestamo.addActionListener(this::btnBuscarUsuarioPrestamoActionPerformed);
+        btnBuscarUAgregarPrestamo.setBackground(new java.awt.Color(0, 102, 153));
+        btnBuscarUAgregarPrestamo.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarUAgregarPrestamo.setText("Buscar");
+        btnBuscarUAgregarPrestamo.addActionListener(this::btnBuscarUAgregarPrestamoActionPerformed);
 
-        btnBuscarLibro.setBackground(new java.awt.Color(0, 102, 153));
-        btnBuscarLibro.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarLibro.setText("Buscar");
-        btnBuscarLibro.addActionListener(this::btnBuscarLibroActionPerformed);
+        btnBuscarLAgregarPrestamo.setBackground(new java.awt.Color(0, 102, 153));
+        btnBuscarLAgregarPrestamo.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarLAgregarPrestamo.setText("Buscar");
+        btnBuscarLAgregarPrestamo.addActionListener(this::btnBuscarLAgregarPrestamoActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -129,31 +134,31 @@ public class AgregarPrestamo extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addComponent(jLabelUCedulaAgregarPrestamo)
+                                    .addComponent(jLabelNombreAgregarPrestamo, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtNombreAgregarPrestamo, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
                                     .addComponent(txtUsuarioAgregarPrestamo))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnBuscarUsuarioPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnBuscarUAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(5, 5, 5))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
+                                        .addComponent(jLabelISBNAgregarPrestamo)
                                         .addGap(18, 18, 18))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel5)
+                                        .addComponent(jLabelTituloAgregarPrestamo)
                                         .addGap(47, 47, 47)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(txtTituloAgregarPrestamo, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
                                     .addComponent(txtISBNAgregarPrestamo))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnBuscarLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnBuscarLAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(8, 8, 8))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel6)
+                                .addComponent(jLabelCodigoBibliotecarioAgregarPrestamo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtBibliotecarioAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(93, 93, 93))))
@@ -164,14 +169,14 @@ public class AgregarPrestamo extends javax.swing.JInternalFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
                                         .addComponent(txtFechaAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel7))
+                                    .addComponent(jLabelFechaPrestamoAgregarPrestamo))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(btnAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(btbCancelarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btbCancelarAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(12, 12, 12)))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
+                                .addComponent(jLabelCodigoAgregarPrestamo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtCodigoAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE))
@@ -185,46 +190,46 @@ public class AgregarPrestamo extends javax.swing.JInternalFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(jLabelCodigoAgregarPrestamo)
                     .addComponent(txtCodigoAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(jLabelUCedulaAgregarPrestamo)
                     .addComponent(txtUsuarioAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBuscarUsuarioPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBuscarUAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtNombreAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
+                    .addComponent(jLabelNombreAgregarPrestamo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(jLabelISBNAgregarPrestamo)
                     .addComponent(txtISBNAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBuscarLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBuscarLAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
+                    .addComponent(jLabelTituloAgregarPrestamo)
                     .addComponent(txtTituloAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
+                    .addComponent(jLabelCodigoBibliotecarioAgregarPrestamo)
                     .addComponent(txtBibliotecarioAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15)
-                .addComponent(jLabel7)
+                .addComponent(jLabelFechaPrestamoAgregarPrestamo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtFechaAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btbCancelarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btbCancelarAgregarPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -235,34 +240,34 @@ public class AgregarPrestamo extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAgregarPrestamoActionPerformed
 
-    private void btbCancelarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarUsuarioActionPerformed
+    private void btbCancelarAgregarPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarAgregarPrestamoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btbCancelarUsuarioActionPerformed
+    }//GEN-LAST:event_btbCancelarAgregarPrestamoActionPerformed
 
-    private void btnBuscarUsuarioPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioPrestamoActionPerformed
+    private void btnBuscarUAgregarPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarUAgregarPrestamoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarUsuarioPrestamoActionPerformed
+    }//GEN-LAST:event_btnBuscarUAgregarPrestamoActionPerformed
 
-    private void btnBuscarLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarLibroActionPerformed
+    private void btnBuscarLAgregarPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarLAgregarPrestamoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarLibroActionPerformed
+    }//GEN-LAST:event_btnBuscarLAgregarPrestamoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btbCancelarUsuario;
+    private javax.swing.JButton btbCancelarAgregarPrestamo;
     private javax.swing.JButton btnAgregarPrestamo;
-    private javax.swing.JButton btnBuscarLibro;
-    private javax.swing.JButton btnBuscarUsuarioPrestamo;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JButton btnBuscarLAgregarPrestamo;
+    private javax.swing.JButton btnBuscarUAgregarPrestamo;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelAgregarPrestamo;
+    private javax.swing.JLabel jLabelCodigoAgregarPrestamo;
+    private javax.swing.JLabel jLabelCodigoBibliotecarioAgregarPrestamo;
+    private javax.swing.JLabel jLabelFechaPrestamoAgregarPrestamo;
+    private javax.swing.JLabel jLabelISBNAgregarPrestamo;
+    private javax.swing.JLabel jLabelNombreAgregarPrestamo;
+    private javax.swing.JLabel jLabelTituloAgregarPrestamo;
+    private javax.swing.JLabel jLabelUCedulaAgregarPrestamo;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;

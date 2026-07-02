@@ -166,6 +166,12 @@
       </SubComponents>
     </Container>
   </NonVisualComponents>
+  <Properties>
+    <Property name="iconifiable" type="boolean" value="true"/>
+    <Property name="maximizable" type="boolean" value="true"/>
+    <Property name="resizable" type="boolean" value="true"/>
+    <Property name="title" type="java.lang.String" value="Actualizar Usuario"/>
+  </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
   </SyntheticProperties>
@@ -185,22 +191,22 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="197" max="32767" attributes="0"/>
-              <Component id="btnBuscarUsuario" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="260" max="32767" attributes="0"/>
+              <Component id="btnBuscarActualizarUsuario" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="0" pref="146" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="177" max="32767" attributes="0"/>
                   <Component id="jInternalFrame1" min="-2" pref="0" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="146" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="178" max="32767" attributes="0"/>
               </Group>
           </Group>
           <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="0" pref="146" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="177" max="32767" attributes="0"/>
                   <Component id="jInternalFrame2" min="-2" pref="0" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="146" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="178" max="32767" attributes="0"/>
               </Group>
           </Group>
           <Group type="103" rootIndex="3" groupAlignment="0" attributes="0">
@@ -216,7 +222,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
-              <Component id="btnBuscarUsuario" min="-2" max="-2" attributes="0"/>
+              <Component id="btnBuscarActualizarUsuario" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="361" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
@@ -7825,59 +7831,59 @@
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="txtNombreUsuario16" min="-2" pref="222" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel131" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelNombreActualizarUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="jTextField17" min="-2" pref="222" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel130" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelCedulaActualizarUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="txtApellidoUsuario16" min="-2" pref="222" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel132" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelApellidoActualizarUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="txtCorreoUsuario16" min="-2" pref="222" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel133" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelCEActualizarUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="txtTelefonoUsuario16" min="-2" pref="222" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel134" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelTelefonoActualizarUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Component id="txtDireccionUsuaria16" min="-2" pref="222" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel135" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelDireccionActualizarUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel136" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelFechaNacimientoActualizarUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="txtFechaUsuario16" alignment="0" min="-2" pref="222" max="-2" attributes="0"/>
                                           <Group type="102" alignment="1" attributes="0">
-                                              <Component id="btbGuardarUsuario17" max="32767" attributes="0"/>
+                                              <Component id="btbfActualizarUsuario" max="32767" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="btbCancelarUsuario16" min="-2" pref="101" max="-2" attributes="0"/>
+                                              <Component id="btbCancelarActualizarUsuario" min="-2" pref="101" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="29" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="92" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -7890,37 +7896,37 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel82" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jLabel130" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCedulaActualizarUsuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jTextField17" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jLabel131" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelNombreActualizarUsuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtNombreUsuario16" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel132" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelApellidoActualizarUsuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtApellidoUsuario16" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel133" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCEActualizarUsuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtCorreoUsuario16" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel134" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelTelefonoActualizarUsuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtTelefonoUsuario16" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel135" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelDireccionActualizarUsuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtDireccionUsuaria16" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel136" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelFechaNacimientoActualizarUsuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtFechaUsuario16" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btbGuardarUsuario17" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                      <Component id="btbCancelarUsuario16" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="btbfActualizarUsuario" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="btbCancelarActualizarUsuario" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -7935,7 +7941,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="jLabel129" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelActualizarUsuario" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -7944,14 +7950,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel129" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelActualizarUsuario" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="16" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel129">
+            <Component class="javax.swing.JLabel" name="jLabelActualizarUsuario">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="1"/>
@@ -7961,64 +7967,64 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="jLabel130">
+        <Component class="javax.swing.JLabel" name="jLabelCedulaActualizarUsuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cedula:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField17">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel131">
+        <Component class="javax.swing.JLabel" name="jLabelNombreActualizarUsuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Nombre:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNombreUsuario16">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel132">
+        <Component class="javax.swing.JLabel" name="jLabelApellidoActualizarUsuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Apellido:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtApellidoUsuario16">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel133">
+        <Component class="javax.swing.JLabel" name="jLabelCEActualizarUsuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Correo Electronico:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCorreoUsuario16">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel134">
+        <Component class="javax.swing.JLabel" name="jLabelTelefonoActualizarUsuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Telefono:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtTelefonoUsuario16">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel135">
+        <Component class="javax.swing.JLabel" name="jLabelDireccionActualizarUsuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Direccion:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtDireccionUsuaria16">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel136">
+        <Component class="javax.swing.JLabel" name="jLabelFechaNacimientoActualizarUsuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Fecha de Nacimiento:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtFechaUsuario16">
         </Component>
-        <Component class="javax.swing.JButton" name="btbCancelarUsuario16">
+        <Component class="javax.swing.JButton" name="btbCancelarActualizarUsuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbCancelarUsuario16ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbCancelarActualizarUsuarioActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btbGuardarUsuario17">
+        <Component class="javax.swing.JButton" name="btbfActualizarUsuario">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="66" red="0" type="rgb"/>
@@ -8026,15 +8032,15 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Guardar"/>
+            <Property name="text" type="java.lang.String" value="Actualizar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbGuardarUsuario17ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbfActualizarUsuarioActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="btnBuscarUsuario">
+    <Component class="javax.swing.JButton" name="btnBuscarActualizarUsuario">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="66" red="0" type="rgb"/>
@@ -8045,7 +8051,7 @@
         <Property name="text" type="java.lang.String" value="Buscar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarUsuarioActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarActualizarUsuarioActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

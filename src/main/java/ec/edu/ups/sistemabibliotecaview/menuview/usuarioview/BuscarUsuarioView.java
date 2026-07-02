@@ -37,23 +37,23 @@ public class BuscarUsuarioView extends javax.swing.JInternalFrame {
         jPanel5 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelBuscarUsuario = new javax.swing.JLabel();
+        jLabelCedulaBuscarUsuario = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelNombreBuscarUsuario = new javax.swing.JLabel();
         txtNombreUsuarioBuscado = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelApellidoBuscarUsuario = new javax.swing.JLabel();
         txtApellidoUsuarioBuscado = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        jLabelCEBuscarUsuario = new javax.swing.JLabel();
         txtCorreoUsuarioBuscado = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelTelefonoBuscarUsuario = new javax.swing.JLabel();
         txtTelefonoUsuarioBuscado = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabelDireccionBuscarUsuario = new javax.swing.JLabel();
         txtDireccionUsuariaBuscado = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        jLabelFNBuscarUsuario = new javax.swing.JLabel();
         txtFechaUsuarioBuscado = new javax.swing.JTextField();
-        btnCancelarBuscadoUsuario = new javax.swing.JButton();
-        btnBuscarUsuario = new javax.swing.JButton();
+        btnCancelarBuscarUsuario = new javax.swing.JButton();
+        btnBuscarBUsuario = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 102));
 
@@ -153,10 +153,15 @@ public class BuscarUsuarioView extends javax.swing.JInternalFrame {
                 .addGap(16, 16, 16))
         );
 
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Buscar Usuario");
+
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("BUSCAR USUARIO");
+        jLabelBuscarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelBuscarUsuario.setText("BUSCAR USUARIO");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -164,38 +169,38 @@ public class BuscarUsuarioView extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(jLabelBuscarUsuario)
                 .addGap(40, 40, 40))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelBuscarUsuario)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel2.setText("Cedula:");
+        jLabelCedulaBuscarUsuario.setText("Cedula:");
 
-        jLabel3.setText("Nombre:");
+        jLabelNombreBuscarUsuario.setText("Nombre:");
 
-        jLabel4.setText("Apellido:");
+        jLabelApellidoBuscarUsuario.setText("Apellido:");
 
-        jLabel5.setText("Correo Electronico:");
+        jLabelCEBuscarUsuario.setText("Correo Electronico:");
 
-        jLabel6.setText("Telefono:");
+        jLabelTelefonoBuscarUsuario.setText("Telefono:");
 
-        jLabel7.setText("Direccion:");
+        jLabelDireccionBuscarUsuario.setText("Direccion:");
 
-        jLabel8.setText("Fecha de Nacimiento:");
+        jLabelFNBuscarUsuario.setText("Fecha de Nacimiento:");
 
-        btnCancelarBuscadoUsuario.setText("Cancelar");
-        btnCancelarBuscadoUsuario.addActionListener(this::btnCancelarBuscadoUsuarioActionPerformed);
+        btnCancelarBuscarUsuario.setText("Cancelar");
+        btnCancelarBuscarUsuario.addActionListener(this::btnCancelarBuscarUsuarioActionPerformed);
 
-        btnBuscarUsuario.setBackground(new java.awt.Color(0, 102, 153));
-        btnBuscarUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarUsuario.setText("Buscar");
-        btnBuscarUsuario.addActionListener(this::btnBuscarUsuarioActionPerformed);
+        btnBuscarBUsuario.setBackground(new java.awt.Color(0, 102, 153));
+        btnBuscarBUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarBUsuario.setText("Buscar");
+        btnBuscarBUsuario.addActionListener(this::btnBuscarBUsuarioActionPerformed);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -213,42 +218,42 @@ public class BuscarUsuarioView extends javax.swing.JInternalFrame {
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtNombreUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel3))
+                                .addComponent(jLabelNombreBuscarUsuario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel2))
+                                .addComponent(jLabelCedulaBuscarUsuario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtApellidoUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel4))
+                                .addComponent(jLabelApellidoBuscarUsuario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtCorreoUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel5))
+                                .addComponent(jLabelCEBuscarUsuario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtTelefonoUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6))
+                                .addComponent(jLabelTelefonoBuscarUsuario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtDireccionUsuariaBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel7))
+                                .addComponent(jLabelDireccionBuscarUsuario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8)
+                                .addComponent(jLabelFNBuscarUsuario)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(txtFechaUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                            .addComponent(btnBuscarUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(btnBuscarBUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addGap(18, 18, 18)
-                                            .addComponent(btnCancelarBuscadoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                            .addComponent(btnCancelarBuscarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                         .addGap(0, 15, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -258,37 +263,37 @@ public class BuscarUsuarioView extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabelCedulaBuscarUsuario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
+                .addComponent(jLabelNombreBuscarUsuario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtNombreUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(jLabelApellidoBuscarUsuario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtApellidoUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(jLabelCEBuscarUsuario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtCorreoUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(jLabelTelefonoBuscarUsuario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtTelefonoUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(jLabelDireccionBuscarUsuario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtDireccionUsuariaBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(jLabelFNBuscarUsuario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtFechaUsuarioBuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBuscarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCancelarBuscadoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBuscarBUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCancelarBuscarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -312,13 +317,13 @@ public class BuscarUsuarioView extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCancelarBuscadoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarBuscadoUsuarioActionPerformed
+    private void btnCancelarBuscarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarBuscarUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelarBuscadoUsuarioActionPerformed
+    }//GEN-LAST:event_btnCancelarBuscarUsuarioActionPerformed
 
-    private void btnBuscarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioActionPerformed
+    private void btnBuscarBUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarBUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarUsuarioActionPerformed
+    }//GEN-LAST:event_btnBuscarBUsuarioActionPerformed
 
     private void btnBibliotecariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBibliotecariosActionPerformed
         // TODO add your handling code here:
@@ -340,20 +345,20 @@ public class BuscarUsuarioView extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAutores;
     private javax.swing.JButton btnBibliotecarios;
-    private javax.swing.JButton btnBuscarUsuario;
-    private javax.swing.JButton btnCancelarBuscadoUsuario;
+    private javax.swing.JButton btnBuscarBUsuario;
+    private javax.swing.JButton btnCancelarBuscarUsuario;
     private javax.swing.JButton btnDevoluciones;
     private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnLibros;
     private javax.swing.JButton btnPrestamo;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabelApellidoBuscarUsuario;
+    private javax.swing.JLabel jLabelBuscarUsuario;
+    private javax.swing.JLabel jLabelCEBuscarUsuario;
+    private javax.swing.JLabel jLabelCedulaBuscarUsuario;
+    private javax.swing.JLabel jLabelDireccionBuscarUsuario;
+    private javax.swing.JLabel jLabelFNBuscarUsuario;
+    private javax.swing.JLabel jLabelNombreBuscarUsuario;
+    private javax.swing.JLabel jLabelTelefonoBuscarUsuario;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

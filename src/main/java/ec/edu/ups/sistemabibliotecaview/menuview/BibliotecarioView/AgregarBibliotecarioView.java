@@ -37,24 +37,24 @@ public class AgregarBibliotecarioView extends javax.swing.JInternalFrame {
         jPanel5 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelAgregarBibliotecario = new javax.swing.JLabel();
+        jLabelCedulaAgregarBibliotecario = new javax.swing.JLabel();
         txtCedulaBibliotecario = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelNombreAgregarBibliotecario = new javax.swing.JLabel();
         txtNombreBibliotecario = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelApellidoAgregarBibliotecario = new javax.swing.JLabel();
         txtApellidoBibliotecario = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        jLabelCargoAgregarBibliotecario = new javax.swing.JLabel();
         txtCargoBibliotecario = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelTelefonoAgregarBibliotecario = new javax.swing.JLabel();
         txtTelefonoBibliotecario = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabelCodigoAgregarBibliotecario = new javax.swing.JLabel();
         txtCodigoBibliotecario = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        jLabelFechaNacimientoAgregarBibliotecario = new javax.swing.JLabel();
         txtFechaBibliotecario = new javax.swing.JTextField();
-        btbCancelarBibliotecario = new javax.swing.JButton();
-        btnGuardarBibliotecario = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
+        btbCancelarAgregarBibliotecario = new javax.swing.JButton();
+        btnGuardarAgregarBibliotecario = new javax.swing.JButton();
+        jLabelTurnoAgregarBibliotecario = new javax.swing.JLabel();
         txtTurnoBibliotecario = new javax.swing.JTextField();
 
         btnBibliotecarios.setBackground(new java.awt.Color(153, 153, 153));
@@ -146,10 +146,15 @@ public class AgregarBibliotecarioView extends javax.swing.JInternalFrame {
                 .addGap(16, 16, 16))
         );
 
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Agregar Bibliotecario");
+
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("REGISTRO DE BIBLIOTECARIO");
+        jLabelAgregarBibliotecario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelAgregarBibliotecario.setText("REGISTRO DE BIBLIOTECARIO");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -157,40 +162,40 @@ public class AgregarBibliotecarioView extends javax.swing.JInternalFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelAgregarBibliotecario)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelAgregarBibliotecario)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel2.setText("Cedula:");
+        jLabelCedulaAgregarBibliotecario.setText("Cedula:");
 
-        jLabel3.setText("Nombre:");
+        jLabelNombreAgregarBibliotecario.setText("Nombre:");
 
-        jLabel4.setText("Apellido:");
+        jLabelApellidoAgregarBibliotecario.setText("Apellido:");
 
-        jLabel5.setText("Cargo:");
+        jLabelCargoAgregarBibliotecario.setText("Cargo:");
 
-        jLabel6.setText("Telefono:");
+        jLabelTelefonoAgregarBibliotecario.setText("Telefono:");
 
-        jLabel7.setText("Codigo:");
+        jLabelCodigoAgregarBibliotecario.setText("Codigo:");
 
-        jLabel8.setText("Fecha de Nacimiento:");
+        jLabelFechaNacimientoAgregarBibliotecario.setText("Fecha de Nacimiento:");
 
-        btbCancelarBibliotecario.setText("Cancelar");
-        btbCancelarBibliotecario.addActionListener(this::btbCancelarBibliotecarioActionPerformed);
+        btbCancelarAgregarBibliotecario.setText("Cancelar");
+        btbCancelarAgregarBibliotecario.addActionListener(this::btbCancelarAgregarBibliotecarioActionPerformed);
 
-        btnGuardarBibliotecario.setBackground(new java.awt.Color(0, 102, 153));
-        btnGuardarBibliotecario.setForeground(new java.awt.Color(255, 255, 255));
-        btnGuardarBibliotecario.setText("Guardar");
-        btnGuardarBibliotecario.addActionListener(this::btnGuardarBibliotecarioActionPerformed);
+        btnGuardarAgregarBibliotecario.setBackground(new java.awt.Color(0, 102, 153));
+        btnGuardarAgregarBibliotecario.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarAgregarBibliotecario.setText("Guardar");
+        btnGuardarAgregarBibliotecario.addActionListener(this::btnGuardarAgregarBibliotecarioActionPerformed);
 
-        jLabel9.setText("Turno:");
+        jLabelTurnoAgregarBibliotecario.setText("Turno:");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -208,37 +213,37 @@ public class AgregarBibliotecarioView extends javax.swing.JInternalFrame {
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtNombreBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel3))
+                                .addComponent(jLabelNombreAgregarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtCedulaBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel2))
+                                .addComponent(jLabelCedulaAgregarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtApellidoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel4))
+                                .addComponent(jLabelApellidoAgregarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtCargoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel5))
+                                .addComponent(jLabelCargoAgregarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtTelefonoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6))
+                                .addComponent(jLabelTelefonoAgregarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
                                     .addComponent(txtCodigoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel7))
+                                .addComponent(jLabelCodigoAgregarBibliotecario))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8)
+                                .addComponent(jLabelFechaNacimientoAgregarBibliotecario)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel9)
+                                        .addComponent(jLabelTurnoAgregarBibliotecario)
                                         .addGroup(jPanel3Layout.createSequentialGroup()
                                             .addGap(6, 6, 6)
                                             .addComponent(txtTurnoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -247,9 +252,9 @@ public class AgregarBibliotecarioView extends javax.swing.JInternalFrame {
                                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(txtFechaBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                                .addComponent(btnGuardarBibliotecario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(btnGuardarAgregarBibliotecario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(btbCancelarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                                                .addComponent(btbCancelarAgregarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                         .addGap(0, 36, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -259,41 +264,41 @@ public class AgregarBibliotecarioView extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(jLabelCedulaAgregarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtCedulaBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
+                .addComponent(jLabelNombreAgregarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtNombreBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(jLabelApellidoAgregarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtApellidoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(jLabelCargoAgregarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtCargoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(jLabelTelefonoAgregarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtTelefonoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(jLabelCodigoAgregarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtCodigoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(jLabelFechaNacimientoAgregarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtFechaBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel9)
+                .addComponent(jLabelTurnoAgregarBibliotecario)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtTurnoBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnGuardarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btbCancelarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnGuardarAgregarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btbCancelarAgregarBibliotecario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -317,13 +322,13 @@ public class AgregarBibliotecarioView extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btbCancelarBibliotecarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarBibliotecarioActionPerformed
+    private void btbCancelarAgregarBibliotecarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCancelarAgregarBibliotecarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btbCancelarBibliotecarioActionPerformed
+    }//GEN-LAST:event_btbCancelarAgregarBibliotecarioActionPerformed
 
-    private void btnGuardarBibliotecarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBibliotecarioActionPerformed
+    private void btnGuardarAgregarBibliotecarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAgregarBibliotecarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarBibliotecarioActionPerformed
+    }//GEN-LAST:event_btnGuardarAgregarBibliotecarioActionPerformed
 
     private void btnBibliotecariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBibliotecariosActionPerformed
         // TODO add your handling code here:
@@ -343,23 +348,23 @@ public class AgregarBibliotecarioView extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btbCancelarBibliotecario;
+    private javax.swing.JButton btbCancelarAgregarBibliotecario;
     private javax.swing.JButton btnAutores;
     private javax.swing.JButton btnBibliotecarios;
     private javax.swing.JButton btnDevoluciones;
-    private javax.swing.JButton btnGuardarBibliotecario;
+    private javax.swing.JButton btnGuardarAgregarBibliotecario;
     private javax.swing.JButton btnInicio;
     private javax.swing.JButton btnLibros;
     private javax.swing.JButton btnPrestamo;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelAgregarBibliotecario;
+    private javax.swing.JLabel jLabelApellidoAgregarBibliotecario;
+    private javax.swing.JLabel jLabelCargoAgregarBibliotecario;
+    private javax.swing.JLabel jLabelCedulaAgregarBibliotecario;
+    private javax.swing.JLabel jLabelCodigoAgregarBibliotecario;
+    private javax.swing.JLabel jLabelFechaNacimientoAgregarBibliotecario;
+    private javax.swing.JLabel jLabelNombreAgregarBibliotecario;
+    private javax.swing.JLabel jLabelTelefonoAgregarBibliotecario;
+    private javax.swing.JLabel jLabelTurnoAgregarBibliotecario;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
